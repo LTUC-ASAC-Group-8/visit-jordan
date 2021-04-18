@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+  }
+   
+
+section{
+  display: inline-block;
+  width: 60%;
+}
+
+div{
+  float: right;
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+img , input{
+  width: 40%;
+  margin-top: 20px;
+  margin-left: 20px;  
+}
+
+#form{
+  position: absolute;
+  position: fixed;
+  right: 2.5%;
+  top: 2.5%;
+  width: 400px;
+  height: 100%;
+  background-color: lightgray;
+}
+
+input , label{
+margin-top: 20px;
+margin-left: 5%;
+width: 40%;
+}
+
+button{
+  margin-top: 20px;
+margin-left: 5%;
+width: 100px;
+}
+
+
+
