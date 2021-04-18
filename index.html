@@ -1,20 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Visit Jordan</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visit Jordan</title>
     <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/home-page.css">
     <link rel="stylesheet" href="CSS/style.css">
+
+
 </head>
-<body>
-    <header>
 
-    </header>
-    <main>
+<div class="wall">
+    <div class="jordan-flag"></div>
+    <div class="top_nav">
+        <div class="left">
+            <div class="logo">
+                <p><span>visit</span>Jordan</p>
+            </div>
+            <div class="search_bar">
+            </div>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="#">LogIn</a></li>
+                <li><a href="#">SignUp</a></li>
+                <li><img src="img/logo.png"  alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom_nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <br>
+            <br>
+            <li><a href="#">Journies </a></li>
+            <br>
+            <br>
+            <li><a href="#">Maps</a></li>
+            <br>
+            <br>
+            <li><a href="#">Favourite Places </a></li>
+            <br>
+            <br>
+            <li><img id="cart" src="img/images.png" alt="cart"></li>
+            <br>
+            <br>
+        </ul>
+    </div>
+    <div>
+        <div class="slideshow-container">
 
-    </main>
-    <footer>
+            
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="https://www.planetware.com/wpimages/2020/03/jordan-top-attractions-petra.jpg"
+                    style="width:100%">
+                <div class="text"></div>
+            </div>
 
-    </footer>
-    <script src="JS/app.js"></script>
-</body>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="https://www.travelanddestinations.com/wp-content/uploads/2019/03/Best-Places-in-Jordan-Petra.jpg"
+                    style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="https://www.planetware.com/wpimages/2020/03/jordan-top-attractions-aqaba.jpg"
+                    style="width:100%">
+                <div class="text"></div>
+            </div>
+
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        
+</div>
+<div class="3photos"><img src="img/jo2.jpg" alt=""  width="320px" height="320px"><img src="img/jo10.jpg" alt=""  width="320px" height="320px"><img src="img/jo7.jpg" alt="" width="320px" height="320px"></div>
+
+<img src="img/859669.jpg" style="opacity: 50%;" alt="" width="100%" height="300px">
+<script src="JS/app.js"></script>
+
 </html>
