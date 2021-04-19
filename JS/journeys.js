@@ -23,6 +23,7 @@ console.log(amman);
 
 
 // render();
+
 Trip.prototype.render = function () {
 
     
