@@ -13,6 +13,7 @@ function Trip(name, description, image, video) {
     this.image = image;
     this.video = video;
     tripsArray.push(this);
+
 }
 
 new Trip('Amman', 'hello to amman', 'img/859669.jpg', 'https://www.youtube.com/watch?v=ZJ6fQhE4pcY');

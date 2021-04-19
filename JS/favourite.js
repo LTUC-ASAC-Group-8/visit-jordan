@@ -129,9 +129,6 @@ if (favouriteJourneys !== null && favouriteJourneys.length !== 0) {
 
 
 
-
-
-
 // imageContainer.addEventListener('click', hello);
 
 // let imageSet, imageSet2;
