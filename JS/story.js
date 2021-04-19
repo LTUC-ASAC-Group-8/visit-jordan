@@ -2,85 +2,79 @@
 
 let storyArr=[];
 
-let container=document.getElementById('container');
+let addForm=document.getElementById('add');
 
 function Story(feedback, uploadImage){
     
     this.feedback=feedback;
     this.uploadImage=uploadImage;
-
-    storyArr.push(this);
     
-    updateStorage();
-    
+    storyArr.push(this);    
 }
 
-console.log(storyArr);
+// console.log(storyArr);
 // storyArr=[];
+function handleSubmit(event){
+    
+    event.preventDefault();   
+    let feedback1=event.target.feedback.value;
+    let uploadImage1=event.target.uploadImage.value;
+    
+    let visitor= new Story(feedback1, uploadImage1);
+    console.log(visitor);
+    updateStorage();
+    visitor.renderStory();
+}
+
+addForm.addEventListener('submit', handleSubmit);
+
+Story.prototype.renderStory =function (){
+    // for (let i=0; i< storyArr.length;i++){
+        
+        let parent= document.getElementById('first-pra');
+        let doc= document.createElement('p');
+        let image= document.createElement('img');
+        doc.textContent=this.feedback;
+        image.setAttribute('src',this.uploadImage);
+        parent.appendChild(image);
+        parent.appendChild(doc);
+        // }
+        
+        
+    }
+    // console.log(addForm);
+    
+    for(let i=0; i<storyArr.length;i++){
+        console.log(storyArr);
+        storyArr[i].renderStory();
+    }
 
 
 function updateStorage(){
     let arrayString=JSON.stringify(storyArr);
-    console.log(storyArr);
-    console.log(arrayString);
-
     localStorage.setItem('story',arrayString);
-    
-    console.log(storyArr);
-    console.log(arrayString);
 }
 
 function getStory() {
     let data =localStorage.getItem('story');
-    let dataStory=JSON.parse(data);
-    
+ 
     if (data !==null){
-        
-        storyArr=dataStory;
+        let dataStory=JSON.parse(data);
+        console.log("dataStory",dataStory[0].feedback)
+        for (let i = 0; i < dataStory.length; i++) {
+            new Story(dataStory[i].feedback,dataStory[i].uploadImage);
+            
+        }
+        for(let i=0; i<storyArr.length;i++){
+        console.log(storyArr);
+        storyArr[i].renderStory();
+    }
     }
 
-    renderStory();
+ 
     
 }
 
 
-function handleSubmit(event){
-    event.preventDefault();
-    console.log(event.target);
 
-    
-    let ans =event.target;
-    let feedback=ans.feedback.value;
-    let uploadImage=ans.uploadImage.value;
-    
-    new Story(feedback, uploadImage);
-    
-    // renderStory();
-}
-
-
-function renderStory(){
-    let parent= document.getElementById('first-pra');
-    let image= document.createElement('img');
-    image.setAttribute('src','img/jo2.jpg');
-    parent.appendChild(image);
-    
-    //    storyRen.textContent='';
-}
-container.addEventListener('submit', handleSubmit);
-console.log(container);
-
-getStory();
-
-// console.log(button);
-
-// button.addEventListener('submit',submitter);
-
-// function submitter(event) {
-    //     event.preventDefault();
-    //     let feedback=event.target.feedback.value;
-    //     console.log(feedback);
-
-    // }
-// submitter();
-console.log(storyArr);
+    getStory();

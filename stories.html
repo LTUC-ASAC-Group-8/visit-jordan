@@ -1,57 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title> STORIES </title>
-  
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/stories.css">
+  <title>STORIES</title>
 </head>
 <body>
-
-<div id="container">
-  <img src="img/popup.jpg" alt="">
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Your Story</button>
-
- 
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-     
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        
-          
-
-        </div>
-        <div class="modal-body">
-             <label for="feedback">Tell Us Your Story</label>
-    <input type="text" id="feedback" name="feedback">
-    <br>
-    <br>
-    <label for="uploadImage" id="uploadImage1">Put Link of Image  </label>
-    <input type="text" id="uploadImage" name="uploadImage">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-   
-
   
-</div>
-<section id="first-pra">
+  <form action="" id="add">
+    <fieldset>
+      <label for="feedback">Tell Us Your Story</label>
+      <input type="text" id="feedback" name="feedback">
+      <br>
+      <br>
+      <label for="uploadImage">Put Link of Image</label>
+      <input type="text" id="uploadImage" name="uploadImage" >
+      <br>
+      <br>
+      <input type="submit">
+    </fieldset>
+  </form>
+  
+ 
+  <div id="frame">
+  <section id="first-pra">
 
-</section>
- <script src="JS/story.js"></script>
+    </section>
+  </div>
+
+  <script src="JS/story.js"></script>
 </body>
 </html>
 
-  
-    
+
+
