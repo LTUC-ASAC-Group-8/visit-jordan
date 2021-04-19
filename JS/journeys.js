@@ -10,6 +10,7 @@ function Trip(name, description, image) {
     this.image = image;
 
     tripsArray.push(this);
+
 }
 
 let amman = new Trip('Amman', 'hello to amman', 'img/859669.jpg');
