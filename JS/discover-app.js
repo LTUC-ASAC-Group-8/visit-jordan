@@ -25,20 +25,22 @@
 //create html structure(packages) by constructor
 
 let allPackages = [];
+let x = 0;
 let bookedPackages = [];
+
 function Package(name, description, price, img1, img2, img3) {
   this.name = name,
-  this.description = description,
-  this.price = price,
-  this.img1 = img1,
-  this.img2 = img2,
-  this.img3 = img3,
+    this.description = description,
+    this.price = price,
+    this.img1 = img1,
+    this.img2 = img2,
+    this.img3 = img3,
 
-  allPackages.push(this);
+    allPackages.push(this);
 }
 
 //create instances
-let pacakge1 = new Package('test package', 'heloo from test package', '1200$', 'https://via.placeholder.com/200x70/sss', 'https://via.placeholder.com/150x70/sss', 'https://via.placeholder.com/200x70/sss');
+let pacakge1 = new Package('test package', 'heloo from test package', '1200', 'https://via.placeholder.com/200x70/sss', 'https://via.placeholder.com/150x70/sss', 'https://via.placeholder.com/200x70/sss');
 
 
 let container = document.getElementById('parent-container');
@@ -110,6 +112,12 @@ Package.prototype.renderContent = function () {
   packageName.textContent = this.name;
   packageName.setAttribute('class', 'packageName');
 
+  //add package price
+  let packagePrice = document.createElement('h4');
+  bookingContent.appendChild(packagePrice);
+  packagePrice.textContent = this.price;
+  packagePrice.setAttribute('class', 'packagePrice');
+
   //create booking button
   let bookingButton = document.createElement('input');
   bookingContent.appendChild(bookingButton);
@@ -144,34 +152,65 @@ Package.prototype.renderContent = function () {
   bookingContent.appendChild(descriptionElement);
   descriptionElement.textContent = this.description;
 
-  let object=this;
+  let object = this;
   //addeventlistner for book button
-  bookingButton.addEventListener('click',savingBookedPackages);
+  let x = 0;
+  bookingButton.addEventListener('click', savingBookedPackages);
   function savingBookedPackages() {
-
+    x++;
     bookedPackages.push(object);
     console.log(bookedPackages);
-    let bookedArrayString=JSON.stringify(bookedPackages);
-    console.log(bookedArrayString);
-    localStorage.setItem('bookedpackage',bookedArrayString);
-
-    if (bookedArrayString !==null) {
-
-    }
+    settingData();
   }
-
-
-
-  // if (allPackages[0] || allPackages[4] || allPackages[8]) {
-
-  // }
-  // else (allPackages[1] || allPackages[4] || allPackages[8]) {
-
-  // }
 
 };
 
 allPackages[0].renderContent();
+
+
+function settingData() {
+
+  let bookedArrayString = JSON.stringify(bookedPackages);
+  localStorage.setItem('bookedpackage', bookedArrayString);
+
+}
+
+
+// if (x >= 1) {
+//   bookingButton.removeEventListener('click', savingBookedPackages);
+// }
+
+// gettingData();
+
+// if (allPackages[0] || allPackages[4] || allPackages[8]) {
+
+// }
+// else (allPackages[1] || allPackages[4] || allPackages[8]) {
+
+// }
+
+
+function gettingData() {
+
+  let bookedData = localStorage.getItem('bookedpackage');
+  let bookedArrayString = JSON.parse(bookedData);
+  console.log("bookedArrayString", bookedArrayString)
+
+  if (bookedArrayString !== null) {
+
+    // reinstaniation  the prototypes
+    for (let i = 0; i < bookedArrayString.length; i++) {
+      new Package(bookedArrayString[i].name, bookedArrayString[i].description, bookedArrayString[i].price, bookedArrayString[i].img1, bookedArrayString[i].img2, bookedArrayString[i].img3);
+      console.log('all packeages after new', bookedArrayString);
+
+    }
+  }
+}
+
+
+
+
+
 
 
 

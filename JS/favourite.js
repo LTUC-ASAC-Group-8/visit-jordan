@@ -33,12 +33,13 @@ gettingItems();
 
 
 let imageContainer=document.getElementById("imageContainer");
+
 function renderImage() {
 
     
     for (let i = 0; i < favouriteJourneys.length; i++) {
-        let image=document.createElement ('img');
 
+        let image=document.createElement ('img');
         imageContainer.appendChild(image);
         image.setAttribute('src',favouriteJourneys[i].image);
         image.setAttribute('width','200px');

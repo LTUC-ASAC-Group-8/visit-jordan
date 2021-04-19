@@ -22,6 +22,7 @@ console.log(favourite1);
 
 
 // render();
+
 Trip.prototype.render = function () {
 
     let newImage = document.createElement('img');
