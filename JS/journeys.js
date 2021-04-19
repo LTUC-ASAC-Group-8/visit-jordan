@@ -15,7 +15,7 @@ function Trip(name, description, image, video) {
     tripsArray.push(this);
 }
 
-new Trip('Amman', 'hello to amman', 'img/859669.jpg', 'https://www.youtube.com/watch?v=b27cVgUWdSs');
+new Trip('Amman', 'hello to amman', 'img/859669.jpg', 'https://www.youtube.com/watch?v=ZJ6fQhE4pcY');
 new Trip('aqaba', 'hello from aqaba', 'img/jo2.jpg', 'www.youtube.com/watch?v=TxzHbTTpSKA');
 
 let favourite1 = document.getElementById('container');
