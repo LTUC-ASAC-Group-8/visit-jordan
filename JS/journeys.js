@@ -46,16 +46,6 @@ Trip.prototype.render = function () {
     }
 };
 
-// Getting Items Function from local storage and making the favourite array equal to stored array if not null
-
-
-function settingItem() {
-    let stringArray=JSON.stringify(favouritesArray);
-    localStorage.setItem('journeys',stringArray);
-}
-
-
-
 
 
 
@@ -66,3 +56,32 @@ for (let i = 0; i < tripsArray.length; i++) {
     console.log(tripsArray);
 }
 
+function settingItem() {
+    let stringArray=JSON.stringify(favouritesArray);
+    localStorage.setItem('favouriteJourneys',stringArray);
+}
+
+
+function gettingItem() {
+    let stringArray=localStorage.getItem('favouriteJourneys');
+    let dataArray = JSON.parse(stringArray);
+  
+    console.log(dataArray);
+    if (dataArray!== null){
+        tripsArray=[];
+        for (let i = 0; i < dataArray.length; i++) {
+            new Trip (dataArray[i].name,dataArray[i].description,dataArray[i].image)
+            
+        }
+        console.log(tripsArray);
+        for (let i = 0; i < tripsArray.length; i++) {
+
+            tripsArray[i].render();
+        }
+    }
+    
+
+}
+
+
+gettingItem();
