@@ -1,9 +1,9 @@
 
 
 /* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
+.dotElement {
+  height: 8px;
+  width: 8px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;

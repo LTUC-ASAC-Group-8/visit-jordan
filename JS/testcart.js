@@ -14,17 +14,25 @@ gettingData();
 // rendering the booked data 
 
 
-let bookedImagesContan = document.getElementById("test");
+let bookedImagesContan = document.getElementById("itemList");
+let totalContainer = document.getElementById("totalContainar");
 
+
+let renderdTotalNmber;
+
+
+let counter = 0
 let total = 0
 let renderdsection;
 
 function renderBookedImages() {
+
     for (let i = 0; i < bookedArrayString.length; i++) {
 
         renderdsection = document.createElement('section');
         bookedImagesContan.appendChild(renderdsection);
         renderdsection.setAttribute('class', 'renderdsection');
+
         //  create img element
 
         let renderdimage = document.createElement('img');
@@ -45,9 +53,9 @@ function renderBookedImages() {
         renderdsection.appendChild(renderdprice);
         renderdprice.textContent = bookedArrayString[i].price;
         renderdprice.setAttribute('class', 'renderdprice');
+
         total += parseInt(bookedArrayString[i].price);
 
-        let counter = 0
         counter = 1
 
         //create delete button
@@ -60,12 +68,28 @@ function renderBookedImages() {
 
         deleteButton.addEventListener('click', deleteBookedPackage);
         function deleteBookedPackage() {
+
             counter--;
+            total -= parseInt(bookedArrayString[i].price);
+            console.log("before", counter);
+
             if (counter === 0) {
                 renderdsection.textContent = "";
-            } else {
+                // renderdimage.setAttribute('src',"");
+                console.log("hello from  if ");
+
+            } else if (counter > 0) {
                 renderdcounter.textContent = counter;
+                console.log("hello from else ");
             }
+            else if (counter < 0) {
+                renderdsection.textContent = "";
+                console.log("hello from <0 ");
+                // renderdimage.setAttribute('src',"");
+            }
+            renderdTotalNmber.textContent = total;
+            console.log("before", counter);
+
         }
 
         //  create the counter element
@@ -87,27 +111,51 @@ function renderBookedImages() {
         function addBookedPackage() {
             counter++;
             renderdcounter.textContent = counter;
-            total += parseInt(bookedArrayString[i].price) * counter;
+            total += parseInt(bookedArrayString[i].price);
             renderdprice.textContent = `${parseInt(bookedArrayString[i].price) * counter} $`;
+            renderdTotalNmber.textContent = total;
         };
+
     }
 
     //  create the total element
+
     let renderdTotal = document.createElement('h3');
-    renderdsection.appendChild(renderdTotal);
+    totalContainer.appendChild(renderdTotal);
     renderdTotal.textContent = "Total";
     renderdTotal.setAttribute('class', 'renderdTotal');
 
     //  print the total 
 
-    let renderdTotalNmber = document.createElement('h4');
-    renderdsection.appendChild(renderdTotalNmber);
+    renderdTotalNmber = document.createElement('h4');
+    totalContainer.appendChild(renderdTotalNmber);
     renderdTotalNmber.textContent = total;
     renderdTotalNmber.setAttribute('class', 'renderdTotalNmber');
+
 }
 renderBookedImages()
 
 
+ //purchase event 
+
+let purchaseButton = document.getElementById('purchase');
+purchaseButton.addEventListener('click', purchaseEvent);
+
+function purchaseEvent(event) {
+
+    event.preventDefault()
+    alert(`Thank you for purchasing \nyour total is ${total} `)
+
+    // clear items and total after purches 
+
+    bookedImagesContan.textContent = "";
+    renderdTotalNmber.textContent = "0";
+
+    localStorage.clear();
+    // console.log(localstorage);
+
+
+}
 
 
 
