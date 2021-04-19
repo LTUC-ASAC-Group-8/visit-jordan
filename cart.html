@@ -3,74 +3,51 @@
 
 <head>
 
-    <title>Document</title>
+    <title>Your cart</title>
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/cart.css" />
 </head>
 
 <body>
-    <header>
 
-    </header>
+    <header></header>
+
     <main>
-        <section>
-            <img src="https://via.placeholder.com/250x250/sss">
-            <div>
-                <p>Epc seasonal special events.</p>
-                <p>price $49.99</p>
-                <button type="button">delete</button>
-            </div>
-        </section>
 
-        <section>
-            <img src="https://via.placeholder.com/250x250/sss">
-            <div>
-                <p>Epc seasonal special events.</p>
-                <p>price $49.99</p>
-                <button type="button">delete</button>
-            </div>
-        </section>
+        <h2>Your cart</h2>
 
-        <section>
-            <img src="https://via.placeholder.com/250x250/sss">
-            <div>
-                <p>Epc seasonal special events.</p>
-                <p>price $49.99</p>
-                <button type="button">Delete</button>
-            </div>
-        </section>
+        <div id="itemList"></div>
+
+        <div id="totalContainar"></div>
 
 
-        <section id="form">
+        <fieldset>
 
-            <input type="text" id="name">
-            <label for="name">Name</label>
-            <br>
+            <form id="form">
 
-            <input type="text" id="email">
-            <label for="email">Email</label>
-            <br>
+                <input type="text" id="name" placeholder="Type your name here" required>
+                <label for="name">Name</label>
+                <br>
 
-            <input type="number" id="phone">
-            <label for="phone">Phone</label>
-            <br>
+                <input type="text" id="email" placeholder="Type your email here" required>
+                <label for="email">Email</label>
+                <br>
 
-            <input type="number" id="people">
-            <label for="people">Number of People</label>
-            <br>
+                <input type="number" id="phone" placeholder="Type your phone number here" required>
+                <label for="phone">Phone number</label>
+                <br>
 
+                <button type="submit" value="Submit" id="purchase">Purchase</button>
 
-            <button type="submit" value="Submit" class="col-1-4">Submit</button>
-            <button type="submit" value="Submit" class="col-1-4">Delete</button>
+            </form>
 
-        </section>
-
+        </fieldset>
 
 
     </main>
-    <footer>
+    <footer></footer>
 
-    </footer>
+    <script src="js/testcart.js"></script>
 
 </body>
 
