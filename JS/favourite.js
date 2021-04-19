@@ -20,13 +20,32 @@
 // console.log(parent);
 
 
-
+let favouriteJourneys=[];
 function gettingItems() {
-    let stringFavouriteJourneys = localStorage.getItem('journeys');
+    let stringFavouriteJourneys = localStorage.getItem('favouriteJourneys');
 
-    let favouriteJourneys = JSON.parse(stringFavouriteJourneys);
+     favouriteJourneys = JSON.parse(stringFavouriteJourneys);
 
     console.log(favouriteJourneys);
 }
 
 gettingItems();
+
+
+let imageContainer=document.getElementById("imageContainer");
+function renderImage() {
+
+    
+    for (let i = 0; i < favouriteJourneys.length; i++) {
+        let image=document.createElement ('img');
+
+        imageContainer.appendChild(image);
+        image.setAttribute('src',favouriteJourneys[i].image);
+        image.setAttribute('width','200px');
+        console.log(image);
+  
+    }
+
+    
+}
+renderImage();
