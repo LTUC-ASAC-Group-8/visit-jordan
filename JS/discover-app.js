@@ -1,26 +1,5 @@
 /* eslint-disable no-inner-declarations */
 'use strict';
-//run the automatic slideshow
-// let slideIndex = 0;
-// showSlides();
-
-// function showSlides() {
-//   let i;
-//   let slides = document.getElementsByClassName('slides');
-//   let dots = document.getElementsByClassName('dot');
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = 'none';
-//   }
-//   slideIndex++;
-//   if (slideIndex > slides.length) { slideIndex = 1; }
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(' active', '');
-//   }
-//   slides[slideIndex - 1].style.display = 'block';
-//   dots[slideIndex - 1].className += ' active';
-//   setTimeout(showSlides, 2000); // Change image every 2 seconds
-// }
-
 
 //create html structure(packages) by constructor
 
@@ -40,13 +19,15 @@ function Package(name, description, price, img1, img2, img3) {
 }
 
 //create instances
-let pacakge1 = new Package('test package', 'heloo from test package', '1200', 'https://via.placeholder.com/200x70/sss', 'https://via.placeholder.com/150x70/sss', 'https://via.placeholder.com/200x70/sss');
+let pacakge1 = new Package('test package', 'heloo from test package', '1200', 'https://via.placeholder.com/200x70/sss', 'https://via.placeholder.com/200x70/sss', 'https://via.placeholder.com/200x70/sss');
+
+let pacakge2 = new Package('test package2', 'heloo from test package2', '500', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss');
+
 
 
 let container = document.getElementById('parent-container');
 
 Package.prototype.renderContent = function () {
-
 
   //main section
   let bigSection = document.createElement('section');
@@ -57,11 +38,11 @@ Package.prototype.renderContent = function () {
   bigSection.appendChild(bookingContent);
   bookingContent.setAttribute('class', 'bookingContent');
 
-
   //first slide
   let firstSlide = document.createElement('div');
   bookingContent.appendChild(firstSlide);
-  firstSlide.setAttribute('class', 'Slides');
+  firstSlide.setAttribute('class', 'slides');
+
   //img number
   let imgNumber1 = document.createElement('div');
   firstSlide.appendChild(imgNumber1);
@@ -73,12 +54,10 @@ Package.prototype.renderContent = function () {
   firstImage.setAttribute('class', 'package-img');
   firstImage.setAttribute('src', this.img1);
 
-
-
   //second slide
   let secondSlide = document.createElement('div');
   bookingContent.appendChild(secondSlide);
-  secondSlide.setAttribute('class', 'Slides');
+  secondSlide.setAttribute('class', 'slides');
   //img number
   let imgNumber2 = document.createElement('div');
   secondSlide.appendChild(imgNumber2);
@@ -94,7 +73,7 @@ Package.prototype.renderContent = function () {
   //third slide
   let thirdSlide = document.createElement('div');
   bookingContent.appendChild(thirdSlide);
-  thirdSlide.setAttribute('class', 'Slides');
+  thirdSlide.setAttribute('class', 'slides');
   //img number
   let imgNumber3 = document.createElement('div');
   thirdSlide.appendChild(imgNumber3);
@@ -129,6 +108,9 @@ Package.prototype.renderContent = function () {
   let dotContainer = document.createElement('div');
   bookingContent.appendChild(dotContainer);
   dotContainer.setAttribute('style', 'text-align:center');
+  dotContainer.setAttribute('class', 'dotContainer');
+
+
 
   //create first dot by span
   let dotElement1 = document.createElement('span');
@@ -144,7 +126,6 @@ Package.prototype.renderContent = function () {
   let dotElement3 = document.createElement('span');
   bookingContent.appendChild(dotElement3);
   dotElement3.setAttribute('class', 'dotElement');
-
 
 
   //create description content
@@ -165,7 +146,11 @@ Package.prototype.renderContent = function () {
 
 };
 
-allPackages[0].renderContent();
+
+for (let i = 0; i < allPackages.length; i++) {
+  allPackages[i].renderContent();
+}
+
 
 
 function settingData() {
@@ -198,6 +183,8 @@ function gettingData() {
 
   if (bookedArrayString !== null) {
 
+    allPackages = bookedArrayString;
+
     // reinstaniation  the prototypes
     for (let i = 0; i < bookedArrayString.length; i++) {
       new Package(bookedArrayString[i].name, bookedArrayString[i].description, bookedArrayString[i].price, bookedArrayString[i].img1, bookedArrayString[i].img2, bookedArrayString[i].img3);
@@ -208,7 +195,26 @@ function gettingData() {
 }
 
 
+// run the automatic slideshow
+let slideIndex = 0;
+// showSlides();
 
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName('slides');
+  let dots = document.getElementsByClassName('dotElement');
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1; }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(' active', '');
+  }
+  slides[slideIndex - 1].style.display = 'block';
+  dots[slideIndex - 1].className += ' active';
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
 
 
 
