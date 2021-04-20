@@ -1,1 +1,88 @@
 
+#flag{
+    position: fixed;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Fredoka One', cursive;
+  
+  }
+  #flag{
+    display: block;
+    width: 100%;
+    height: 8px;
+    margin: auto;
+    background: linear-gradient(to right , black 0%, red 37%, white 73%, green 25%);
+  
+  }
+  
+  
+  body,footer{
+    margin: 0;
+  }
+  
+  
+  
+  nav{
+    background: #fff;
+    padding: 0 50px;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    opacity:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+  
+  }
+  
+  nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 30px 15px;
+    font-size: 0.9em;
+    font-weight: bold;
+    
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  nav a:hover{
+    background:#e9cece;
+    color: red;
+  }
+  
+  #cart {
+    width: 30%;
+    height: 8%;
+  }
+  
+  nav img {
+  
+    margin: auto;
+    width: 80%;
+    display: block;
+    padding: 15px;
+  }
+  
+  main{
+    margin-left: 250px;
+    /* padding: 10px; */
+  
+  }
+  
+  footer{
+  
+    margin-left: 220px;
+  }
+  
