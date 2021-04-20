@@ -14,7 +14,7 @@
 }
 #flag{
   display: block;
-  width: 100%;
+  width: 99%;
   height: 8px;
   margin: auto;
   background: linear-gradient(to right , black 0%, red 37%, white 73%, green 25%);
@@ -68,10 +68,11 @@ nav a:hover{
 
 nav img {
 
-  margin: 40px;
+  margin: 1em;
   width: 80%;
   display: block;
-  padding: 15px;
+  padding: 1em;
+  width: 130%;
 }
 
 main{
