@@ -1,21 +1,28 @@
+/* eslint-disable no-var */
 /* eslint-disable no-inner-declarations */
 'use strict';
 
-//create html structure(packages) by constructor
 
 let allPackages = [];
-let x = 0;
-let bookedPackages = [];
+
+// console.log('localStorage',localStorage.length);
+
+if (localStorage.length===0) {
+  var bookedPackages=[];
+}
+
+
+//create html structure(packages) by constructor
 
 function Package(name, description, price, img1, img2, img3) {
   this.name = name,
-    this.description = description,
-    this.price = price,
-    this.img1 = img1,
-    this.img2 = img2,
-    this.img3 = img3,
+  this.description = description,
+  this.price = price,
+  this.img1 = img1,
+  this.img2 = img2,
+  this.img3 = img3,
 
-    allPackages.push(this);
+  allPackages.push(this);
 }
 
 //create instances
@@ -135,13 +142,18 @@ Package.prototype.renderContent = function () {
 
   let object = this;
   //addeventlistner for book button
-  let x = 0;
+
   bookingButton.addEventListener('click', savingBookedPackages);
   function savingBookedPackages() {
-    x++;
-    bookedPackages.push(object);
-    console.log(bookedPackages);
-    settingData();
+
+    console.log('bookedPackages before if',bookedPackages);
+    if (!(bookedPackages.includes(object))) {
+
+
+      bookedPackages.push(object);
+      console.log('bookedPackages after if',bookedPackages.includes(object));
+      settingData();
+    }
   }
 
 };
@@ -156,43 +168,34 @@ for (let i = 0; i < allPackages.length; i++) {
 function settingData() {
 
   let bookedArrayString = JSON.stringify(bookedPackages);
-  localStorage.setItem('bookedpackage', bookedArrayString);
+  localStorage.setItem('bookedPackage', bookedArrayString);
 
 }
 
+gettingData();
 
-// if (x >= 1) {
-//   bookingButton.removeEventListener('click', savingBookedPackages);
-// }
-
-// gettingData();
-
-// if (allPackages[0] || allPackages[4] || allPackages[8]) {
-
-// }
-// else (allPackages[1] || allPackages[4] || allPackages[8]) {
-
-// }
 
 
 function gettingData() {
 
-  let bookedData = localStorage.getItem('bookedpackage');
-  let bookedArrayString = JSON.parse(bookedData);
-  console.log("bookedArrayString", bookedArrayString)
+  let bookedData = localStorage.getItem('bookedPackage');
+  let bookedArrayParse = JSON.parse(bookedData);
+  console.log('bookedArrayString', bookedArrayParse);
 
-  if (bookedArrayString !== null) {
+  if (bookedArrayParse !== null) {
 
-    allPackages = bookedArrayString;
-
+    //updating value of bookedPackages
+    
     // reinstaniation  the prototypes
-    for (let i = 0; i < bookedArrayString.length; i++) {
-      new Package(bookedArrayString[i].name, bookedArrayString[i].description, bookedArrayString[i].price, bookedArrayString[i].img1, bookedArrayString[i].img2, bookedArrayString[i].img3);
-      console.log('all packeages after new', bookedArrayString);
-
+    for (let i = 0; i < bookedArrayParse.length; i++) {
+      new Package(bookedArrayParse[i].name, bookedArrayParse[i].description, bookedArrayParse[i].price, bookedArrayParse[i].img1, bookedArrayParse[i].img2, bookedArrayParse[i].img3);
+      console.log('all packeages after new', bookedArrayParse);
+      
     }
+    //  bookedPackages=bookedArrayParse;
   }
 }
+
 
 
 // run the automatic slideshow
