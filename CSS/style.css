@@ -1,7 +1,7 @@
-  /* #flag{
-    position: fixed;
-  } */
 
+#flag{
+    position: fixed;
+  }
   
   * {
     margin: 0;
@@ -21,7 +21,6 @@
   
   }
   
-
   
   body,footer{
     margin: 0;
