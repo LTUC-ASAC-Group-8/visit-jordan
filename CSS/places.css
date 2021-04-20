@@ -1,0 +1,47 @@
+ div section{
+    position: relative;
+     margin-top: 30px;
+     height: 320px;
+ }
+ 
+ img{
+     float: left;
+     width: 30%;
+     margin-left: 2%;
+     height:300px;
+     /* display: block; */
+
+ }
+
+  section p{
+      text-align: justify;
+      line-height: 28px;
+      margin-left: 3%;
+      margin-right: 3%;
+      width: 30%;
+      display: inline-block;
+      font-size: 18px;
+      /* margin: 0; */
+      /* float: right; */
+     /* margin-right: 15%; */
+ }
+
+ button{
+    /* display: inline-block; */
+
+    position: absolute;
+    bottom: 15px;
+    left: 55%;
+    width: 10%;
+    height: 30px;
+    font-size: 18px;
+}
+
+ iframe{
+    float: right;
+    width: 30%;
+    height:300px;
+    margin-right: 2%;
+ }
+
+

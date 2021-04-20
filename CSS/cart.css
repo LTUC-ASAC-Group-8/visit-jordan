@@ -82,10 +82,10 @@
 }
 
 .addButton{
-  float: right;
+  /* float: right; */
   /* display: inline-block; */
   /* margin-top: 20px; */
-  margin-right:320px ;
+  margin-left: 35px ;
   width: 5%;
 }
 #totalContainar{
