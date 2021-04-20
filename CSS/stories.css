@@ -52,9 +52,77 @@ img{
 #submit{
    background-color :rgba(207, 197, 207, 0.644);
 } */
-*{
+#add{
+   position: fixed;
+   right: 1em;
+   top: 3em;  
+   width: 20em;
+   height: 40em;
+   background-image: url('https://image.freepik.com/free-vector/abstract-watercolor-background-with-frame_136610-150.jpg');
+ }
+ #feedback{
+   position: relative;
+   top: 10em;
+   left: 2.8em;
+   width: 18em;
+   height: 12em;
+   background-color: rgba(207, 197, 207, 0.753);
+}
+#uploadImage{
+   position: relative;
+   top: 10em;
+   left: 2.8em;
+   width: 18em;
+   height: 7em;
+   background-color :rgba(207, 197, 207, 0.753);
+}
+#fe{
+   position: relative;
+   left: 5.5em;
+   top: 9em;
+}
+#up{
+   position: relative;
+   left: 5.5em;
+   top: 9em;
+}
+#submit{
+   position: relative;
+   left: 13em;
+   top: 11em;
+   font-size: 1em;
+}
+#frame { 
    /* display: block; */
- box-sizing: border-box;  
+   position:relative;
+   margin: auto;
+      /* left:105px; */
+   width: 300px; 
+   height:100%;
+   top: 5em;
+    
+  
+}
+#frame img{
+   display: block;
+   position: relative;
+   top: 2em;
+   right:24em;
+   width: 23em;
+   height: 23em;
+   margin: 0;
+   
+}
+#frame p{
+   display: block;
+   position: relative;
+   top: -19em;
+}
+
+
+/* *{ */
+   /* display: block; */
+ /* box-sizing: border-box;  
 }
 #add{
    position: fixed;
@@ -123,4 +191,4 @@ p{
    top: -250px;
    
 
-} 
+}  */
