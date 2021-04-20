@@ -1,3 +1,6 @@
+/* eslint-disable quotes */
+/* eslint-disable no-trailing-spaces */
+/* eslint-disable indent */
 'use strict';
 
 let storyArr=[];
@@ -44,7 +47,7 @@ Story.prototype.renderStory =function (){
         // }
         
         
-    }
+    };
     // console.log(addForm);
     
     for(let i=0; i<storyArr.length;i++){
@@ -63,7 +66,7 @@ function getStory() {
  
     if (data !==null){
         let dataStory=JSON.parse(data);
-        console.log("dataStory",dataStory[0].feedback)
+        console.log("dataStory",dataStory[0].feedback);
         for (let i = 0; i < dataStory.length; i++) {
             new Story(dataStory[i].feedback,dataStory[i].uploadImage);
             
@@ -81,3 +84,4 @@ function getStory() {
 
 
     getStory();
+
