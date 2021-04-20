@@ -52,11 +52,12 @@ img{
 #submit{
    background-color :rgba(207, 197, 207, 0.644);
 } */
-<<<<<<< HEAD
+
 *{
    /* display: block; */
  box-sizing: border-box;  
-=======
+}
+
 #add{
    position: fixed;
    right: 1em;
@@ -128,7 +129,6 @@ img{
 /* *{ */
    /* display: block; */
  /* box-sizing: border-box;  
->>>>>>> main
 }
 #add{
    position: fixed;
@@ -197,8 +197,4 @@ p{
    top: -250px;
    
 
-<<<<<<< HEAD
-} 
-=======
 }  */
->>>>>>> main
