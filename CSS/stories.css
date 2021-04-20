@@ -9,7 +9,9 @@
  top: 50px;
  
 }
-
+#feedback{
+   height: 200px;
+}
 img{
    display: block;
    width: 500px;
@@ -22,10 +24,11 @@ p{
    margin: 0;
    /* padding: 0; */
 }
-#frame { position:relative;
+#frame { 
+   position:relative;
     top:10px;
      bottom:0px;
-      left:500px;
+      left:450px;
    width: 500px; 
    height:100%;
     
