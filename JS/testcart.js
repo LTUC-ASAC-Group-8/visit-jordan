@@ -74,7 +74,12 @@ function renderBookedImages() {
             console.log("before", counter);
 
             if (counter === 0) {
-                renderdsection.textContent = "";
+                renderdimage.remove();
+                renderdname.remove();
+                renderdprice.remove();
+                deleteButton.remove();
+                renderdcounter.remove();
+                addButton.remove();
                 // renderdimage.setAttribute('src',"");
                 console.log("hello from  if ");
 
@@ -83,7 +88,13 @@ function renderBookedImages() {
                 console.log("hello from else ");
             }
             else if (counter < 0) {
-                renderdsection.textContent = "";
+
+                renderdimage.remove();
+                renderdname.remove();
+                renderdprice.remove();
+                deleteButton.remove();
+                renderdcounter.remove();
+                addButton.remove();
                 console.log("hello from <0 ");
                 // renderdimage.setAttribute('src',"");
             }
