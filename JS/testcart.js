@@ -6,9 +6,9 @@
 let bookedArrayString = [];
 function gettingData() {
 
-  let bookedData = localStorage.getItem('bookedpackage');
+  let bookedData = localStorage.getItem('bookedPackage');
   bookedArrayString = JSON.parse(bookedData);
-  console.log(bookedArrayString);
+  // console.log(bookedArrayString);
 }
 gettingData();
 
