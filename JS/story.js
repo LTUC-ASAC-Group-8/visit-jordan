@@ -14,16 +14,19 @@ function Story(feedback, uploadImage){
 
 // console.log(storyArr);
 // storyArr=[];
+
 function handleSubmit(event){
-    
-    event.preventDefault();   
-    let feedback1=event.target.feedback.value;
-    let uploadImage1=event.target.uploadImage.value;
-    
-    let visitor= new Story(feedback1, uploadImage1);
-    console.log(visitor);
-    updateStorage();
-    visitor.renderStory();
+        // if (uploadImage !==null){
+        
+        event.preventDefault();   
+        let feedback1=event.target.feedback.value;
+        let uploadImage1=event.target.uploadImage.value;
+        
+        let visitor= new Story(feedback1, uploadImage1);
+        console.log(visitor);
+        updateStorage();
+        visitor.renderStory();
+    // }
 }
 
 addForm.addEventListener('submit', handleSubmit);

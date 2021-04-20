@@ -1,3 +1,4 @@
+/* eslint-disable no-trailing-spaces */
 /* eslint-disable no-var */
 /* eslint-disable no-inner-declarations */
 'use strict';
