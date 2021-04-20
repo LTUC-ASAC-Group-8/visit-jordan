@@ -16,6 +16,10 @@ function Trip(name, description, image, video) {
 
 }
 
+<<<<<<< HEAD
+new Trip('Amman', 'hello to amman', 'img/859669.jpg', 'https://www.youtube.com/watch?v=ZJ6fQhE4pcY');
+new Trip('aqaba', 'hello from aqaba', 'img/jo2.jpg', 'www.youtube.com/watch?v=TxzHbTTpSKA');
+=======
 new Trip('DESERT CASTLES', "Jordan is home to some of the world's most spectacular Roman ruins. Quseir Amra is one of Jordan's four UNESCO World Heritage Sites. Jordan's Desert Castles are home to stunning examples of both early Islamic art and architecture. Amman is a great place for a family-friendly meal and to mingle with the locals.", 'images/places-images/DESERT CASTLES.jpg', 'videoplayback.mp4');
 
 
@@ -67,6 +71,7 @@ new Trip('MUJIB NATURE RESERVE', "Mujib Nature Reserve is a 20 minute drive from
 
 
 
+>>>>>>> main
 
 let favourite1 = document.getElementById('container');
 // console.log(favourite1);
@@ -127,10 +132,14 @@ Trip.prototype.render = function () {
 
         console.log(favouritesArray);
 
-        console.log('Why always true After Refhreshing? ',!(favouritesArray.includes(object)));
+        console.log('Why always true? ',!(favouritesArray.includes(object)));
 
+<<<<<<< HEAD
+        if (!(favouritesArray.includes(object))) {
+=======
         if (!favouritesArray.includes(object)) {
             console.log('hellothere',favouritesArray);
+>>>>>>> main
 
             favouritesArray.push(object);
 
