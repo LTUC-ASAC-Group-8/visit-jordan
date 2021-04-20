@@ -1,8 +1,11 @@
+/* eslint-disable no-trailing-spaces */
 /* eslint-disable indent */
 
 
 let tripsArray = [];
 let favouritesArray = [];
+
+// console.log(favouritesArray);
 
 function Trip(name, description, image, video) {
     this.name = name;
@@ -10,32 +13,33 @@ function Trip(name, description, image, video) {
     this.image = image;
     this.video = video;
     tripsArray.push(this);
+
 }
 
-let amman = new Trip('Amman', 'hello to amman', 'img/859669.jpg' ,'www.youtube.com/watch?v=NIhbo1ymNEQ');
-new Trip('aqaba', 'hello from aqaba', 'img/jo2.jpg','www.youtube.com/watch?v=TxzHbTTpSKA');
+new Trip('Amman', 'hello to amman', 'img/859669.jpg', 'https://www.youtube.com/watch?v=ZJ6fQhE4pcY');
+new Trip('aqaba', 'hello from aqaba', 'img/jo2.jpg', 'www.youtube.com/watch?v=TxzHbTTpSKA');
 
 let favourite1 = document.getElementById('container');
-console.log(favourite1);
+// console.log(favourite1);
 
-console.log(amman);
+
+
+
+
+
 // Render
-
-
-// render();
-
 Trip.prototype.render = function () {
 
-    
+
     let newImage = document.createElement('img');
     newImage.setAttribute('src', this.image);
-    newImage.setAttribute('id',this.name);
-
+    newImage.setAttribute('id', this.name);
     favourite1.appendChild(newImage);
+    // console.log(newImage);
 
-console.log(newImage);
+
     let button = document.createElement('button');
-    button.textContent = 'submit';
+    button.textContent = 'Add to Favourite';
     favourite1.appendChild(button);
 
     button.addEventListener('click', submitter);
@@ -44,23 +48,43 @@ console.log(newImage);
 
     // submitter
     let object = this;
+    // console.log(object);
 
+    let stringObject = JSON.stringify(object);
+
+    object = JSON.parse(stringObject);
+
+    // console.log(object);
+
+    console.log(favouritesArray);
     function submitter() {
-        favouritesArray.push(object);
+
         console.log(favouritesArray);
-        settingItem();
+
+        console.log('Why always true? ',!(favouritesArray.includes(object)));
+
+        if (!(favouritesArray.includes(object))) {
+
+            favouritesArray.push(object);
+
+            // console.log('hello inside if');
+            settingItem();
+        }
+        console.log(favouritesArray);
+
     }
+    // button.removeEventListener('click', submitter);
 };
-
-
-
 
 
 for (let i = 0; i < tripsArray.length; i++) {
 
     tripsArray[i].render();
-    console.log(tripsArray);
+    // console.log(tripsArray);
 }
+
+
+
 
 function settingItem() {
     let stringArray = JSON.stringify(favouritesArray);
@@ -69,25 +93,30 @@ function settingItem() {
 
 
 function gettingItem() {
-    let stringArray = localStorage.getItem('favouriteJourneys');
-    let dataArray = JSON.parse(stringArray);
+    let stringTripsArray = localStorage.getItem('favouriteJourneys');
+    let dataArray = JSON.parse(stringTripsArray);
 
-    console.log(dataArray);
+
+
+    // console.log(dataArray);
     if (dataArray !== null) {
         tripsArray = [];
         for (let i = 0; i < dataArray.length; i++) {
-            new Trip(dataArray[i].name, dataArray[i].description, dataArray[i].image , dataArray[i].video )
-
+            new Trip(dataArray[i].name, dataArray[i].description, dataArray[i].image, dataArray[i].video);
         }
-        console.log(tripsArray);
-        for (let i = 0; i < tripsArray.length; i++) {
-
-            tripsArray[i].render();
-        }
+        // console.log(tripsArray);
+        favouritesArray = [];
+        favouritesArray = dataArray;
+        // console.log(favouritesArray);
     }
-
 
 }
 
 
 gettingItem();
+
+
+
+
+// console.log(favouritesArray);
+
