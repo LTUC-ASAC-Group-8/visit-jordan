@@ -6,24 +6,47 @@
     <title>Your cart</title>
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/cart.css" />
+
+    <!-- copy this part inside head -->
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fredoka+One&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+
+    <nav>
+
+        <img id="logo" src="/img/logo.png" alt="">
+        <a href="#">Home</a>
+        <a href="#">Journies </a>
+        <a href="#">Maps</a>
+        <a href="#">Favourite</a>
+        <img id="cart" src="/img/images.png" alt="cart">
+    </nav>
+    <p id="flag"></p>
 
     <header></header>
 
     <main>
 
-        <h2>Your cart</h2>
+        <h2 id="Your-cart">Your cart</h2>
 
         <div id="itemList"></div>
 
-        <div id="totalContainar"></div>
+       
 
 
         <fieldset>
 
+            <div id="totalContainar"></div>
+
             <form id="form">
+
+                
 
                 <input type="text" id="name" placeholder="Type your name here" required>
                 <label for="name">Name</label>
@@ -40,6 +63,10 @@
                 <button type="submit" value="Submit" id="purchase">Purchase</button>
 
             </form>
+
+         <p id="message">
+          Discover Jordan and Enjoy Your Journey!
+         </p>
 
         </fieldset>
 
