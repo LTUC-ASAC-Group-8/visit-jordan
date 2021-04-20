@@ -28,7 +28,7 @@ function Package(name, description, price, img1, img2, img3,img4) {
 }
 
 //create instances
-let pacakge1 = new Package('test package', 'heloo from test package', '1200', 'https://via.placeholder.com/200x70/sss', 'https://via.placeholder.com/200x70/sss', 'https://via.placeholder.com/200x70/sss', 'https://via.placeholder.com/175x70/sss');
+let pacakge1 = new Package('test package1 ttrip to aqaba ', 'heloo from test package', '1200', 'https://via.placeholder.com/200x70/sss', 'https://via.placeholder.com/200x70/sss', 'https://via.placeholder.com/200x70/sss', 'https://via.placeholder.com/175x70/sss');
 
 let pacakge2 = new Package('test package2', 'heloo from test package2', '500', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss' , 'https://via.placeholder.com/175x70/sss');
 
