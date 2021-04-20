@@ -26,14 +26,22 @@ if (favouriteJourneys !== null && favouriteJourneys.length !== 0) {
 
     function renderFavouriteImages() {
         for (let i = 0; i < favouriteJourneys.length; i++) {
+            let imageArticle=document.createElement('article')
+
+            imageContainer.appendChild(imageArticle);
+            imageArticle.setAttribute('id',favouriteJourneys[i].name)
 
             let image = document.createElement('img');
-            imageContainer.appendChild(image);
+            imageArticle.appendChild(image)
 
             image.setAttribute('src', favouriteJourneys[i].image);
             image.setAttribute('width', '200px');
             image.setAttribute('id', favouriteJourneys[i].name);
             // console.log(image);
+
+        //     let button = document.createElement('button');
+        // imageArticle.appendChild(button);
+        // button.textContent = 'Remove';
         }
     }
     renderFavouriteImages();
@@ -54,39 +62,61 @@ if (favouriteJourneys !== null && favouriteJourneys.length !== 0) {
     imageContainer.addEventListener('click', divClicking);
 
 
-    let parent = document.getElementById('detailsContainer');
-    let title = document.createElement('h2');
-    let video = document.createElement('video');
-    let paragraph = document.createElement('p');
-
-
-    parent.appendChild(title);
-    parent.appendChild(video);
-    parent.appendChild(paragraph);
-
-
-
-
+    
+    
+    
     // console.log(parent);
-    function divClicking(event) {
+    
+    
+    let parent = document.getElementById('detailsContainer');
+    let articleEl=document.createElement('article')
+    let copyTitle,videoCopy,paraCopy;
+    // make a article for every image
+    function showingDiv() {
+        
+        let title = document.createElement('h2');
+        copyTitle=title
+    
+        let video = document.createElement('video');
+        videoCopy=video
+        let paragraph = document.createElement('p');
+        paraCopy=paragraph
+        
+             articleEl.appendChild(title);
+             articleEl.appendChild(video);
+             articleEl.appendChild(paragraph);
+    }
+    // append title video paragraph to that article
+    parent.appendChild(articleEl)
+    showingDiv();
+    
 
-        let button = document.createElement('button');
-        parent.appendChild(button);
-        button.textContent = ('Remove');
+    let button = document.createElement('button');
+    //  imageArticle.appendChild(button);
+     button.textContent = 'Remove';
+     
+     function divClicking(event) {
+         button.className='button';
+         articleEl.appendChild(button);
+
+        // let button = document.createElement('button');
+        // parent.appendChild(button);
+        // button.textContent = ('Remove');
 
         imageSet = event.target;
         console.log('Hey ', event.target.name);
 
         // console.log(imageSet.id);
         // console.log(favouriteJourneys[0].name);
+        
         for (let i = 0; i < favouriteJourneys.length; i++) {
             if (imageSet.id === favouriteJourneys[i].name) {
                 button.setAttribute('id', favouriteJourneys[i].name);
 
-                title.textContent = (favouriteJourneys[i].name);
-                video.setAttribute('src', favouriteJourneys[i].video);
-                video.setAttribute('controls',favouriteJourneys[i].video);
-                paragraph.textContent = (favouriteJourneys[i].description);
+                copyTitle.textContent = (favouriteJourneys[i].name);
+                videoCopy.setAttribute('src', favouriteJourneys[i].video);
+                videoCopy.setAttribute('controls',favouriteJourneys[i].video);
+                paraCopy.textContent = (favouriteJourneys[i].description);
 
                 button.addEventListener('click', removeItem);
             }
@@ -96,10 +126,20 @@ if (favouriteJourneys !== null && favouriteJourneys.length !== 0) {
 
             for (let i = 0; i < favouriteJourneys.length; i++) {
 
-                if (event.target.id === favouriteJourneys[i].name) {
+                if (button.id === favouriteJourneys[i].name) {
                     favouriteJourneys.splice(i, 1);
                     console.log(favouriteJourneys);
+                    imageContainer.textContent='';
+                    articleEl.textContent='';
+                    // ar
+                    renderFavouriteImages();
+
+
+                    // detail
+                    showingDiv()
+
                     settingItems();
+
                 }
             }
         }
