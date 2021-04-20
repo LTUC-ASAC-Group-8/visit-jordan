@@ -6,9 +6,9 @@
 let bookedArrayString = [];
 function gettingData() {
 
-  let bookedData = localStorage.getItem('bookedpackage');
+  let bookedData = localStorage.getItem('bookedPackage');
   bookedArrayString = JSON.parse(bookedData);
-  console.log(bookedArrayString);
+  // console.log(bookedArrayString);
 }
 gettingData();
 
@@ -52,17 +52,22 @@ function renderBookedImages() {
 
     let renderdprice = document.createElement('h5');
     renderdsection.appendChild(renderdprice);
-    renderdprice.textContent = bookedArrayString[i].price;
+    renderdprice.textContent = `${bookedArrayString[i].price} $`;
     renderdprice.setAttribute('class', 'renderdprice');
 
     total += parseInt(bookedArrayString[i].price);
 
     counter = 1;
 
+    // create div container for - 1 + 
+    let renderDivContainer = document.createElement('div');
+    renderdsection.appendChild(renderDivContainer);
+    renderDivContainer.setAttribute('class', 'renderDivContainer');
+
     //create delete button
 
     let deleteButton = document.createElement('input');
-    renderdsection.appendChild(deleteButton);
+    renderDivContainer.appendChild(deleteButton);
     deleteButton.setAttribute('class', 'deleteButton');
     deleteButton.setAttribute('type', 'button');
     deleteButton.setAttribute('value', '-');
@@ -72,6 +77,7 @@ function renderBookedImages() {
 
       counter--;
       total -= parseInt(bookedArrayString[i].price);
+      renderdprice.textContent = `${parseInt(bookedArrayString[i].price) * counter} $`;
       console.log('before', counter);
 
       if (counter === 0) {
@@ -99,23 +105,24 @@ function renderBookedImages() {
         console.log('hello from <0 ');
         // renderdimage.setAttribute('src',"");
       }
-      renderdTotalNmber.textContent = total;
+      
+      renderdTotalNmber.textContent = `${total} $`;
       console.log('before', counter);
 
     }
-
+      
     //  create the counter element
 
     let renderdcounter = document.createElement('h5');
-    renderdsection.appendChild(renderdcounter);
+    renderDivContainer.appendChild(renderdcounter);
     renderdcounter.textContent = counter;
     renderdcounter.setAttribute('class', 'renderdcounter');
 
     //create adding button
 
     let addButton = document.createElement('input');
-    renderdsection.appendChild(addButton);
-    addButton.setAttribute('class', 'deleteButton');
+    renderDivContainer.appendChild(addButton);
+    addButton.setAttribute('class', 'addButton');
     addButton.setAttribute('type', 'button');
     addButton.setAttribute('value', '+');
 
@@ -125,7 +132,7 @@ function renderBookedImages() {
       renderdcounter.textContent = counter;
       total += parseInt(bookedArrayString[i].price);
       renderdprice.textContent = `${parseInt(bookedArrayString[i].price) * counter} $`;
-      renderdTotalNmber.textContent = total;
+      renderdTotalNmber.textContent = `${total} $`;
     }
 
   }
@@ -141,7 +148,7 @@ function renderBookedImages() {
 
   renderdTotalNmber = document.createElement('h4');
   totalContainer.appendChild(renderdTotalNmber);
-  renderdTotalNmber.textContent = total;
+  renderdTotalNmber.textContent = `${total} $`;
   renderdTotalNmber.setAttribute('class', 'renderdTotalNmber');
 
 }

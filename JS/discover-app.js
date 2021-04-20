@@ -8,28 +8,43 @@ let allPackages = [];
 
 // console.log('localStorage',localStorage.length);
 
-if (localStorage.length===0) {
-  var bookedPackages=[];
-}
+// if (localStorage.length===0) {
+// }
 
+var bookedPackages=[];
 
 //create html structure(packages) by constructor
 
-function Package(name, description, price, img1, img2, img3) {
+function Package(name, description, price, img1, img2, img3,img4) {
   this.name = name,
   this.description = description,
   this.price = price,
   this.img1 = img1,
   this.img2 = img2,
   this.img3 = img3,
+  this.img4=img4,
 
   allPackages.push(this);
 }
 
 //create instances
-let pacakge1 = new Package('test package', 'heloo from test package', '1200', 'https://via.placeholder.com/200x70/sss', 'https://via.placeholder.com/200x70/sss', 'https://via.placeholder.com/200x70/sss');
+let pacakge1 = new Package('test package1 ttrip to aqaba ', 'heloo from test package', '1200', 'https://via.placeholder.com/200x70/sss', 'https://via.placeholder.com/200x70/sss', 'https://via.placeholder.com/200x70/sss', 'https://via.placeholder.com/175x70/sss');
 
-let pacakge2 = new Package('test package2', 'heloo from test package2', '500', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss');
+let pacakge2 = new Package('test package2', 'heloo from test package2', '500', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss' , 'https://via.placeholder.com/175x70/sss');
+
+let pacakge3 = new Package('test pacakge3', 'heloo from test pacakge3', '500', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss' , 'https://via.placeholder.com/175x70/sss');
+
+let pacakge4 = new Package('test pacakge4', 'heloo from test pacakge4', '500', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss' , 'https://via.placeholder.com/175x70/sss');
+
+let pacakge5 = new Package('test pacakge5', 'heloo from test pacakge5', '500', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss' , 'https://via.placeholder.com/175x70/sss');
+
+let pacakge6 = new Package('test pacakge6', 'heloo from test pacakge6', '500', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss' , 'https://via.placeholder.com/175x70/sss');
+
+let pacakge7 = new Package('test pacakge7', 'heloo from test pacakge7', '500', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss' , 'https://via.placeholder.com/175x70/sss');
+
+let pacakge8 = new Package('test pacakge8', 'heloo from test pacakge8', '500', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss' , 'https://via.placeholder.com/175x70/sss');
+
+let pacakge9 = new Package('test pacakge9', 'heloo from test pacakge9', '500', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss', 'https://via.placeholder.com/180x70/sss' , 'https://via.placeholder.com/175x70/sss');
 
 
 
@@ -93,6 +108,22 @@ Package.prototype.renderContent = function () {
   thirdImage.setAttribute('class', 'package-img');
   thirdImage.setAttribute('src', this.img2);
 
+   //fourth slide
+   let fourthSlide = document.createElement('div');
+   bookingContent.appendChild(fourthSlide);
+   fourthSlide.setAttribute('class', 'slides4');
+   //img number
+   let imgNumber4 = document.createElement('div');
+   fourthSlide.appendChild(imgNumber4);
+   imgNumber4.setAttribute('class', 'imgNumber');
+ 
+   //image
+   let fourthImage = document.createElement('img');
+   fourthSlide.appendChild(fourthImage);
+   fourthImage.setAttribute('class', 'package-img');
+   fourthImage.setAttribute('src', this.img2);
+
+   
   //add package name
   let packageName = document.createElement('h3');
   bookingContent.appendChild(packageName);
@@ -193,7 +224,7 @@ function gettingData() {
       console.log('all packeages after new', bookedArrayParse);
       
     }
-    //  bookedPackages=bookedArrayParse;
+     bookedPackages=bookedArrayParse;
   }
 }
 
@@ -201,7 +232,7 @@ function gettingData() {
 
 // run the automatic slideshow
 let slideIndex = 0;
-// showSlides();
+showSlides();
 
 function showSlides() {
   let i;

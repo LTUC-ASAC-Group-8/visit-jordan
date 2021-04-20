@@ -4,19 +4,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fredoka+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="CSS/stories.css">
-  <title>STORIES</title>
+  <!-- <title>STORIES</title> -->
 </head>
 <body>
-  
+
+  <nav>
+        
+    <img id="logo" src="/img/logo.png" alt="">
+
+    <a href="index.html">Home</a>
+
+    <a href="DiscoverJordanPlaces.html">Journies </a>
+
+    <a href="DiscoverJordanPackages.html">Maps</a>
+
+    <a href="favorite.html">Favourite</a>
+
+   <a href="cart.html"><img id="cart" src="/img/images.png" alt="cart"></a> 
+
+</nav>
+
+<p id="flag"></p>
+
+
+<main>
+
   <form action="" id="add">
     <fieldset>
-
-      <label for="feedback">Tell Us Your Story</label>
+      
+      <label for="feedback" id="fe">Tell Us Your Story</label>
       <input type="text" id="feedback" name="feedback" required>
       <br>
       <br>
-      <label for="uploadImage">Put Link of Image</label>
+      <label for="uploadImage" id="up">Put Link of Image</label>
       <input type="text" id="uploadImage" name="uploadImage" required>
       <br>
       <br>
@@ -26,12 +52,13 @@
   
  
   <div id="frame">
-  <section id="first-pra">
-    
+    <section id="first-pra">
+      
     </section>
   </div>
-
+  
   <script src="JS/story.js"></script>
+</main>
 </body>
 </html>
 
