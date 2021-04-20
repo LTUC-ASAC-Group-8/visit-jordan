@@ -1,4 +1,3 @@
-/* eslint-disable no-trailing-spaces */
 'use strict';
 
 let slideIndex = 0;
