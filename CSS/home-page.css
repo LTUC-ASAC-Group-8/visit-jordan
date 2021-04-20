@@ -1,103 +1,76 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans%7CMountains+of+Christmas&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  font-family: 'Fredoka One', cursive;
+#flag{
+  position: fixed;
+  width: 100%;
+  height: 8px;
+  margin: auto;
+  background: linear-gradient(to right , black 0%, red 37%, white 73%, green 25%);
 
 }
-.wall .jordan-flag{
-  width: 100%;
-  height: 5px;
-  background: linear-gradient(to right, red 0% , black 25%, green 25%, white 50%, red 50%, black 75%, #494949 75%, red 100%);
+
+
+body,footer{
+  margin: 0;
 }
-#cart {
-    width: 40px;
-    height: 40px;
-}
-.wall .top_nav{
-  margin-top: 5px;
-  width: 100%;
-  height: 65px;
+
+
+
+nav{
   background: #fff;
   padding: 0 50px;
+  position: fixed;
+  top: 0%;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  opacity:100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+
 }
-.wall .top_nav .left{
-  display: flex;
-  align-items: center;
-  
-}
-.wall .top_nav .left .logo p{
-  font-size: 24px;
+
+nav a{
+  display: inline-block;
+  text-decoration: none;
+  padding: 30px 15px;
+  font-size: 0.9em;
   font-weight: bold;
+  
   color: black;
-  font-family: "Mountains of Christmas", cursive;
-  margin-right: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
-.wall .top_nav .left .logo p span{
+
+nav a:hover{
+  background:#e9cece;
   color: red;
-  font-family: "Mountains of Christmas", cursive;
 }
-#logo{
-  width: 60px;
-  height: 60px;
-}
-.wall .top_nav .right ul{
-  font-family: 'Fredoka One', cursive;
 
-  display: flex;
+#cart {
+  width: 30%;
+  height: 8%;
 }
-.wall .top_nav .right ul li{
-  margin: 0 12px;
-}
-.wall .top_nav .right ul li:last-child{
-  background:  #37A000;
-  margin-right: 0;
-  border-radius: 2px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-.wall .top_nav .right ul li a{
+
+nav img {
+
+  margin: auto;
+  width: 80%;
   display: block;
-  padding: 8px 10px;
-  color: #666666;
-}
-.wall .top_nav .right ul li img {
-    width: 48px;
-    height: 45px;
-    margin: -5px
-}
-.wall .bottom_nav{
-  float: right;
-  width: 100%;
-  background: #F9F9F9;
-  height: 45px;
-  padding: 0 50px;
+  padding: 15px;
 }
 
-.wall .bottom_nav ul{
-  width: 100%;
-  height: 45px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+main{
+  margin-left: 250px;
+  /* padding: 10px; */
+
 }
-.wall .bottom_nav ul li a{
-  color: #494949;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-size: 12px;
+
+footer{
+
+  margin-left: 220px;
 }
-.wall div .background{
-  width: 100%;
-  height: 400px;
-}
-* {box-sizing:border-box}
 
 
 .slideshow-container {
@@ -195,11 +168,11 @@
   to {opacity: 1}
 }
 #images{
-  display: inline-block;
+width: 100%;
 }
 #images a {
 position: relative;
-left: 250px;
+left: 75px;
 top: 20px;
 }
 #final{

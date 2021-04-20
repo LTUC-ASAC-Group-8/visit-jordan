@@ -63,7 +63,7 @@ Trip.prototype.render = function () {
 
         console.log('Why always true? ',!(favouritesArray.includes(object)));
 
-        if (!(favouritesArray.includes(object))) {
+        if (favouritesArray.includes(object)) {
 
             favouritesArray.push(object);
 
