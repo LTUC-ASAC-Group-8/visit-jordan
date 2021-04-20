@@ -24,12 +24,13 @@
 
 body,footer{
   margin: 0;
+  /* background-color: #ffe1ba52; */
 }
 
 
 
 nav{
-  /* background: #fff; */
+  background: #fff;
   padding: 0 50px;
   position: fixed;
   top: 0%;
@@ -42,6 +43,7 @@ nav{
   align-items: center;
   justify-content: center;
   /* border: 1px solid black; */
+  /* background-color: #ffe1ba2a; */
 }
 
 nav a{
@@ -62,8 +64,8 @@ nav a:hover{
 }
 
 #cart {
-    width: 70%;
-  height: 70%;
+    width: 80%;
+  height: 80%;
 }
 
 nav img {
