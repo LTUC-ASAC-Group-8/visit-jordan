@@ -85,6 +85,7 @@ if (favouriteJourneys !== null && favouriteJourneys.length !== 0) {
 
                 title.textContent = (favouriteJourneys[i].name);
                 video.setAttribute('src', favouriteJourneys[i].video);
+                video.setAttribute('controls',favouriteJourneys[i].video);
                 paragraph.textContent = (favouriteJourneys[i].description);
 
                 button.addEventListener('click', removeItem);

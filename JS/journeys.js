@@ -16,7 +16,7 @@ function Trip(name, description, image, video) {
 
 }
 
-new Trip('Amman', 'hello to amman', 'img/859669.jpg', 'https://www.youtube.com/watch?v=ZJ6fQhE4pcY');
+new Trip('Amman', 'hello to amman', 'img/859669.jpg', 'videoplayback.mp4');
 new Trip('aqaba', 'hello from aqaba', 'img/jo2.jpg', 'www.youtube.com/watch?v=TxzHbTTpSKA');
 
 let favourite1 = document.getElementById('container');
@@ -61,7 +61,7 @@ Trip.prototype.render = function () {
 
         console.log(favouritesArray);
 
-        console.log('Why always true? ',!(favouritesArray.includes(object)));
+        console.log('Why always true After Refhreshing? ',!(favouritesArray.includes(object)));
 
         if (!(favouritesArray.includes(object))) {
 
