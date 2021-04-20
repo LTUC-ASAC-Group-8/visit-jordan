@@ -91,10 +91,10 @@ Trip.prototype.render = function () {
     newSection.appendChild(newImage);
     // console.log(newImage);
 
+    let newName = document.createElement('h2');
+    newSection.appendChild(newName);
+    newName.textContent = this.name;    
 
-    let newPagrh=document.createElement('p');
-    newSection.appendChild(newPagrh);
-    newPagrh.textContent = this.description;
 
 
     let newVideo = document.createElement('video');
@@ -104,6 +104,11 @@ Trip.prototype.render = function () {
     // newVideo.setAttribute('type','video/mp4');
     // newVideo.setAttribute('autoplay', 'false');
     newSection.appendChild(newVideo);
+
+
+    let newPagrh=document.createElement('p');
+    newSection.appendChild(newPagrh);
+    newPagrh.textContent = this.description;
 
 
     let button = document.createElement('button');

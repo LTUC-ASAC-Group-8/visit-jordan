@@ -26,13 +26,13 @@ if (favouriteJourneys !== null && favouriteJourneys.length !== 0) {
 
     function renderFavouriteImages() {
         for (let i = 0; i < favouriteJourneys.length; i++) {
-            let imageArticle=document.createElement('article')
+            let imageArticle=document.createElement('article');
 
             imageContainer.appendChild(imageArticle);
-            imageArticle.setAttribute('id',favouriteJourneys[i].name)
+            imageArticle.setAttribute('id',favouriteJourneys[i].name);
 
             let image = document.createElement('img');
-            imageArticle.appendChild(image)
+            imageArticle.appendChild(image);
 
             image.setAttribute('src', favouriteJourneys[i].image);
             image.setAttribute('width', '200px');
@@ -69,31 +69,31 @@ if (favouriteJourneys !== null && favouriteJourneys.length !== 0) {
     
     
     let parent = document.getElementById('detailsContainer');
-    let articleEl=document.createElement('article')
+    let articleEl=document.createElement('article');
     let copyTitle,videoCopy,paraCopy;
     // make a article for every image
     function showingDiv() {
         
         let title = document.createElement('h2');
-        copyTitle=title
+        copyTitle=title;
     
         let video = document.createElement('video');
-        videoCopy=video
+        videoCopy=video;
         let paragraph = document.createElement('p');
-        paraCopy=paragraph
+        paraCopy=paragraph;
         
              articleEl.appendChild(title);
              articleEl.appendChild(video);
              articleEl.appendChild(paragraph);
     }
     // append title video paragraph to that article
-    parent.appendChild(articleEl)
+    parent.appendChild(articleEl);
     showingDiv();
     
 
     let button = document.createElement('button');
     //  imageArticle.appendChild(button);
-     button.textContent = 'Remove';
+     button.textContent = 'Remove From Favourite';
      
      function divClicking(event) {
          button.className='button';
@@ -116,6 +116,7 @@ if (favouriteJourneys !== null && favouriteJourneys.length !== 0) {
                 copyTitle.textContent = (favouriteJourneys[i].name);
                 videoCopy.setAttribute('src', favouriteJourneys[i].video);
                 videoCopy.setAttribute('controls',favouriteJourneys[i].video);
+                videoCopy.setAttribute('autoplay','');
                 paraCopy.textContent = (favouriteJourneys[i].description);
 
                 button.addEventListener('click', removeItem);
@@ -136,7 +137,7 @@ if (favouriteJourneys !== null && favouriteJourneys.length !== 0) {
 
 
                     // detail
-                    showingDiv()
+                    showingDiv();
 
                     settingItems();
 

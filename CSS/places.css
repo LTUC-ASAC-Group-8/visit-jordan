@@ -1,28 +1,37 @@
  div section{
     position: relative;
-     margin-top: 2em;
-     height: 20em;
+     margin-top: 4em;
+     height: 14em;
  }
  
  img{
      float: left;
      width: 30%;
      margin-left: 2%;
-     height: 19em;;
+     height: 14em;;
      /* display: block; */
 
  }
 
+ h2{
+     /* display: inline-block; */
+     float: left;
+     width: 30%;
+     margin-left: 3%;
+ }
+
+
   section p{
       overflow:scroll;
-      height:15em ;
-      text-align: justify;
-      line-height: 1.5em;
+      height:11em ;
       margin-left: 3%;
       margin-right: 3%;
       width: 30%;
       display: inline-block;
-      /* font-size: 1.1em; */
+
+      text-align: justify;
+      line-height: 1.5em;
+      font-size: 0.9em;
       /* margin: 0; */
       /* float: right; */
      /* margin-right: 15%; */
@@ -32,7 +41,7 @@
     /* display: inline-block; */
 
     position: absolute;
-    bottom: 1em;
+    bottom: 0;
     left: 55%;
     width: 10%;
     height: 2em;
@@ -42,7 +51,7 @@
  iframe , video{
     float: right;
     width: 30%;
-    height:300px;
+    height:14em;
     margin-right: 2%;
  }
 
