@@ -52,6 +52,12 @@ img{
 #submit{
    background-color :rgba(207, 197, 207, 0.644);
 } */
+
+*{
+   /* display: block; */
+ box-sizing: border-box;  
+}
+
 #add{
    position: fixed;
    right: 1em;
