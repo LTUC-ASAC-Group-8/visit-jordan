@@ -24,7 +24,7 @@
 
 body,footer{
   margin: 0;
-  background-color: #ffe1ba52;
+  /* background-color: #ffe1ba52; */
 }
 
 
@@ -43,7 +43,7 @@ nav{
   align-items: center;
   justify-content: center;
   /* border: 1px solid black; */
-  background-color: #ffe1ba3b;
+  /* background-color: #ffe1ba2a; */
 }
 
 nav a{
