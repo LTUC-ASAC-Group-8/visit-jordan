@@ -52,7 +52,10 @@
 }
 
 .package-img{
-  border: solid 2px red;
+  /* border: solid 2px red; */
+  width: 300px;
+  height: 225px;
+ 
 }
 
 .slides{
@@ -129,6 +132,15 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.descriptionContent1{
+  margin-top: 0.7em;
+  letter-spacing: 0.05em;
+}
+
+.descriptionContent2{
+  margin-top: 0.7em;
 }
 
 
