@@ -38,7 +38,7 @@ function renderBookedImages() {
 
     let renderdimage = document.createElement('img');
     renderdsection.appendChild(renderdimage);
-    renderdimage.setAttribute('src', bookedArrayString[i].img1);
+    renderdimage.setAttribute('src', bookedArrayString[i].img4);
     renderdimage.setAttribute('class', 'renderdimage');
 
     //  create the name element
@@ -81,23 +81,23 @@ function renderBookedImages() {
 
       if (counter === 0) {
 
-        let confirmMassge= confirm(`the package ${bookedArrayString[i].name} will be deleted`);
+        let confirmMassge = confirm(`the package ${bookedArrayString[i].name} will be deleted`);
         console.log(confirmMassge);
 
-        if( confirmMassge === true){
+        if (confirmMassge === true) {
           renderdimage.remove();
           renderdname.remove();
           renderdprice.remove();
           deleteButton.remove();
           renderdcounter.remove();
           addButton.remove();
-        }else{
-          counter=1;
+        } else {
+          counter = 1;
           total += parseInt(bookedArrayString[i].price);
           renderdprice.textContent = `${parseInt(bookedArrayString[i].price) * counter} $`;
         }
         console.log('hello from  if ');
-        
+
       } else if (counter > 0) {
         renderdcounter.textContent = counter;
         console.log('hello from else ');

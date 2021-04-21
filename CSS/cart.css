@@ -31,10 +31,10 @@
   }
 
   .renderdimage{
-    width: 95%;
-    height: 175px;
-    padding-right: 20px;
-    padding-left: 40px;
+    width: 90%;
+    /* height: 175px; */
+    padding-right: 5px;
+    padding-left: 47.5px;
     margin-top: 5px;
     margin-bottom: 5px;
     
@@ -43,7 +43,7 @@
   .renderdname{
     /* border: 2px rgb(31, 28, 28) solid; */
     width: fit-content;
-    margin-left: 40px;
+    margin-left: 47.5px;
     font-size: 22px;
     /* display: inline-block; */
   }
