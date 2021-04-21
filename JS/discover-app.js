@@ -27,6 +27,7 @@ function Package(name, description, price, img1, img2, img3, img4) {
     allPackages.push(this);
 }
 
+
 //create instances
 let pacakge1 = new Package('test package1 ttrip to aqaba ', 'heloo from test package', '1200', 'https://via.placeholder.com/350x250/sss', 'https://via.placeholder.com/350x250/sss', 'https://via.placeholder.com/350x250/sss', 'https://via.placeholder.com/350x250');
 

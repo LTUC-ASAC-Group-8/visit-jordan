@@ -22,7 +22,7 @@ let totalContainer = document.getElementById('totalContainar');
 let renderdTotalNmber;
 
 
-let counter = 0;
+// let counter = 0;
 let total = 0;
 let renderdsection;
 
@@ -56,8 +56,7 @@ function renderBookedImages() {
     renderdprice.setAttribute('class', 'renderdprice');
 
     total += parseInt(bookedArrayString[i].price);
-
-    counter = 1;
+    let counter = 1;
 
     // create div container for - 1 + 
     let renderDivContainer = document.createElement('div');
@@ -81,15 +80,24 @@ function renderBookedImages() {
       console.log('before', counter);
 
       if (counter === 0) {
-        renderdimage.remove();
-        renderdname.remove();
-        renderdprice.remove();
-        deleteButton.remove();
-        renderdcounter.remove();
-        addButton.remove();
-        // renderdimage.setAttribute('src',"");
-        console.log('hello from  if ');
 
+        let confirmMassge= confirm(`the package ${bookedArrayString[i].name} will be deleted`);
+        console.log(confirmMassge);
+
+        if( confirmMassge === true){
+          renderdimage.remove();
+          renderdname.remove();
+          renderdprice.remove();
+          deleteButton.remove();
+          renderdcounter.remove();
+          addButton.remove();
+        }else{
+          counter=1;
+          total += parseInt(bookedArrayString[i].price);
+          renderdprice.textContent = `${parseInt(bookedArrayString[i].price) * counter} $`;
+        }
+        console.log('hello from  if ');
+        
       } else if (counter > 0) {
         renderdcounter.textContent = counter;
         console.log('hello from else ');
@@ -105,12 +113,12 @@ function renderBookedImages() {
         console.log('hello from <0 ');
         // renderdimage.setAttribute('src',"");
       }
-      
+
       renderdTotalNmber.textContent = `${total} $`;
       console.log('before', counter);
 
     }
-      
+
     //  create the counter element
 
     let renderdcounter = document.createElement('h5');
