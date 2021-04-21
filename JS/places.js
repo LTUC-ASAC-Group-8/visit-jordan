@@ -71,15 +71,8 @@ new Trip('Wadi al hidan', "Wadi Al Hidan is one of Jordan's most scenic and beau
 
 
 
-
-
-
 let favourite1 = document.getElementById('container');
 // console.log(favourite1);
-
-
-
-
 
 
 // Render
@@ -96,19 +89,24 @@ Trip.prototype.render = function () {
     newSection.appendChild(newImage);
     // console.log(newImage);
 
+    let newName = document.createElement('h2');
+    newSection.appendChild(newName);
+    newName.textContent = this.name;    
 
-    let newPagrh=document.createElement('p');
-    newSection.appendChild(newPagrh);
-    newPagrh.textContent = this.description;
 
 
     let newVideo = document.createElement('video');
     newVideo.setAttribute('src', this.video);
-    newVideo.setAttribute('controls','controls');
-    newVideo.setAttribute('muted','muted');
+    newVideo.setAttribute('controls', 'controls');
+    newVideo.setAttribute('muted', 'muted');
     // newVideo.setAttribute('type','video/mp4');
     // newVideo.setAttribute('autoplay', 'false');
     newSection.appendChild(newVideo);
+
+
+    let newPagrh=document.createElement('p');
+    newSection.appendChild(newPagrh);
+    newPagrh.textContent = this.description;
 
 
     let button = document.createElement('button');
@@ -135,7 +133,7 @@ Trip.prototype.render = function () {
 
         console.log(favouritesArray);
 
-        console.log('Why always true? ',!(favouritesArray.includes(object)));
+        console.log('Why always true? ', !(favouritesArray.includes(object)));
 
         if (!favouritesArray.includes(object)) {
             console.log('hellothere',favouritesArray);
