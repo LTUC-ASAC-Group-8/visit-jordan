@@ -56,17 +56,17 @@ new Trip('WADI MUJIB', "In the morning, float on the Dead Sea and walk one of Wa
 
 
 
-new Trip("King's Highway", "The King's Road is a 335 kilometre thoroughfare through the north of the Middle East. The road is a wealth of archeological sites which reads like a historical index and a biblical gazette. Some of the most beautiful early Christian Byzantine mosaics on Middle East on the road.", "images/places-images/King's Highway.jpg", '');
+new Trip("King's Highway", "The King's Road is a 335 kilometre thoroughfare through the north of the Middle East. The road is a wealth of archeological sites which reads like a historical index and a biblical gazette. Some of the most beautiful early Christian Byzantine mosaics on Middle East on the road.", "images/places-images/King's Highway.jpg", '/places-video/ Kings Highway .mp4');
 
 
-new Trip('Dar As Saraya Museum', "Dar al-Saraia Museum is situated on Tell Irbid Archeological Hill. It's an ancient Ottoman building that was changed to the seat of the Ottoman king in 1886. The exhibition comprises many halls that show different subjects.", 'images/places-images/dar al-saraya museum.jpg', '');
+new Trip('Dar As Saraya Museum', "Dar al-Saraia Museum is situated on Tell Irbid Archeological Hill. It's an ancient Ottoman building that was changed to the seat of the Ottoman king in 1886. The exhibition comprises many halls that show different subjects.", 'images/places-images/dar al-saraya museum.jpg', '/places-video/ Dar Al Saraya.mp4');
 
 
-new Trip('Berenice Beach', "The Beach Club Berenice provides a mixed use of beach sports on a genuinely designed beach with panoramic views and outstanding landscape architecture", 'images/places-images/Berenice Beach.jpg', '');
+new Trip('Berenice Beach', "The Beach Club Berenice provides a mixed use of beach sports on a genuinely designed beach with panoramic views and outstanding landscape architecture", 'images/places-images/Berenice Beach.jpg', '/places-video/ Aqaba Berenice  .mp4');
 
 
 
-new Trip('Wadi al hidan', "Wadi Al Hidan is one of Jordan's most scenic and beautiful canyons; with spectacular views of the cliffs in the black basalt, you can take a slide and swim at the proper natural pools.", 'images/places-images/Wadi al hidan.jpg', '');
+new Trip('Wadi al hidan', "Wadi Al Hidan is one of Jordan's most scenic and beautiful canyons; with spectacular views of the cliffs in the black basalt, you can take a slide and swim at the proper natural pools.", 'images/places-images/Wadi al hidan.jpg', '/places-video/ Wadi Hidan.mp4');
 
 
 
