@@ -17,7 +17,6 @@ function Trip(name, description, image, video) {
 
 }
 
-new Trip('DESERT CASTLES', "Jordan is home to some of the world's most spectacular Roman ruins. Quseir Amra is one of Jordan's four UNESCO World Heritage Sites. Jordan's Desert Castles are home to stunning examples of both early Islamic art and architecture. Amman is a great place for a family-friendly meal and to mingle with the locals.", 'images/places-images/DESERT CASTLES.jpg', 'videoplayback.mp4');
 
 
 new Trip('PELLA', "Ajlun Castle was built in 1184 AD by one of Saladin's generals to control the iron mines of Ajlun. Umm Qays is well known as the location of the famed miracle of the Gadarene swine. Pella is a favorite of archaeologists due to its extraordinary wealth of antiquities. Visit the ancient city of As-Salt, which houses the tomb/shrine of Job.", 'images/places-images/PELLA.jpg', '/places-video/Pella.mp4');
@@ -31,6 +30,7 @@ new Trip('MOUNT NEBO', "The most prestigious location in Jordan is Family Advent
 
 new Trip("MA'IN HOT SPRINGS", "Discover Haret Jdoudna with lunch and set off in Ma'in Hot Springs. Stop into Saint George's Church to get an insight into the Holy Land's oldest mosaic map. Discover the place on one of the few walking paths. Before you visit the Mujib Chalets on the Dead Sea, enjoy the sunset in the Dead Sea view. Spend the night in a retreat 260 m below the sea level, at Evason Ma'In Six Senses Spa. Returning to your home tab.", "images/places-images/MA'IN HOT SPRINGS.jpg", "/places-video/Ma'in .mp4");
 
+new Trip('DESERT CASTLES', "Jordan is home to some of the world's most spectacular Roman ruins. Quseir Amra is one of Jordan's four UNESCO World Heritage Sites. Jordan's Desert Castles are home to stunning examples of both early Islamic art and architecture. Amman is a great place for a family-friendly meal and to mingle with the locals.", 'images/places-images/DESERT CASTLES.jpg', '/places-video/desert castle.mp4');
 
 
 new Trip('DANA NATURE RESERVE', "Family Adventures is one of Jordan's biggest and only natural reserves. About 555 plant species and 200 animals species are in the Dana Nature Reserve. Genuine fire cooking, Bedouin style in Rummana campsite, will be served on an evening. Walk around the park to enjoy the breathtaking view of the Great Rift Valley at the end of the day, with a stunning view. Jordan's only bio-geographical reserve which encompasses four separate areas of the nation. You'll see one of the lovely Jordana Hyenas rehabilitated and reintroduced in the wild, or you can see the Caracal Cat if you're lucky.", 'images/places-images/DANA NATURE RESERVE.jpg', '/places-video/Dana Nature Reserve.mp4');

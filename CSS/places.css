@@ -12,9 +12,10 @@
     background-color: rgba(187, 187, 187, 0.548);
     position: fixed;
     margin-top: 1em;
-    /* margin-bottom: 10em; */
     width: 60%; 
   }
+
+
   #ournav li  {
     display:inline-block;
     margin-left: 4.5em;
@@ -25,26 +26,33 @@
   
 
 
-
 div section{
     position: relative;
     padding-top: 6em;
     height: 20em;
-    /* margin-bottom: 4em; */
  }
+
  
 section img{
      float: left;
      width: 30%;
      margin-left: 2%;
      height: 14em;;
-     /* display: block; */
+  
 
  }
 
+
+ section img:hover{
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
+ 
+
  h2{
-     color: #807567;
-     /* display: inline-block; */
+     color: #3F7491;
+    font-size: 1.3em;
      float: left;
      width: 30%;
      margin-left: 3%;
@@ -55,43 +63,45 @@ section img{
 
 
   section p{
-      color: #3F7491;
       overflow:scroll;
-      height:11em ;
+      height:9.5em ;
       margin-left: 3%;
       margin-right: 3%;
       width: 30%;
       display: inline-block;
 
+      color: #022a3f;
+      background-color: #8cc1de17;
+      font-size: 1em;
+      font-family: 'Almarai', sans-serif;
       text-align: justify;
-      line-height: 1.5em;
-      font-size: 0.9em;
+      line-height: 1.35em;
+      margin-top: 1em;
       
-      /* margin: 0; */
-      /* float: right; */
-     /* margin-right: 15%; */
  }
 
+
+
+ 
  button{
-    /* display: inline-block; */
-
-
-    background-color: rgba(102, 0, 0, 0.89);
-    color: #CCAB81;
+  z-index: 1;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1em;
+  background-color:rgba(102, 0, 0, 0.89);
+  color: rgb(218, 216, 216);
     position: absolute;
     bottom: 0;
-    left: 55%;
-    width: 10%;
+    left: 53%;
+    width: 12%;
     height: 2em;
-    /* font-size: 18px; */
 }
 
+
+
 button:hover{
-    color:white;
-  -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        transform: scale(1.05);
-        color:white;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
  iframe , video{
