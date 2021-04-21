@@ -113,7 +113,7 @@
 
 /* Modal Content/Box */
 .modelBoxdiv2 {
-  background-color: #fefefe;
+  background-color: #e42323e3;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
@@ -122,7 +122,7 @@
 
 /* The Close Button */
 .modelBoxSpan {
-  color: #aaa;
+  color: whitesmoke;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -134,13 +134,34 @@
   cursor: pointer;
 }
 
+.descriptionContent0{
+  /* margin-top: 0.7em; */
+  letter-spacing: 0.08em;
+  font-size: 2em;
+  padding: 0.2em;
+  color: whitesmoke;
+
+
+}
 .descriptionContent1{
   margin-top: 0.7em;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
+  line-height: 2em;
+  border: 0.1em dashed rgb(247, 243, 243);
+  padding: 0.4em;
 }
 
 .descriptionContent2{
   margin-top: 0.7em;
+  letter-spacing: 0.08em;
+  line-height: 2em;
+  color: rgb(7, 7, 7);
+  /* font-weight: 0.1em; */
+  padding: 0.4em;
+  border: 0.1em dashed rgb(247, 243, 243);
+  
+
+
 }
 
 
