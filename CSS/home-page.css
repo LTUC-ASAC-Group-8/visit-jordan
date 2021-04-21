@@ -15,6 +15,13 @@ nav{
   
 }
 
+/* #welcome {
+color: orange;
+text-align: center;
+font-family: 'Dela Gothic One', cursive;
+margin-top: 0.2em;} */
+
+
 .mySlides {
   display: none;
 }
@@ -41,6 +48,7 @@ nav{
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+
 
 
 
@@ -167,7 +175,8 @@ top: 80px;
 
 .pra2{
   position: relative;
-  top: 5em;
+  top: 8em;
+  justify-content: end;
   /* left: 2em; */
   margin-left: 3%;
   /* right: 2em; */
@@ -176,15 +185,24 @@ top: 80px;
   /* color:#361f00; */
   color: #022a3f;
   z-index: 2;
-  
   /* background-color: rgba(187, 187, 187, 0.192); */
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Dela Gothic One', cursive;
 }
-/* .pra2:hover{
-        -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-        transform: scale(1.3);
-} */
+
+.pra2 span{
+  color: orange;
+  font-size: 0.2em;
+  text-align: center;
+  font-family: 'Dela Gothic One', cursive;
+}
+
+.pra2:hover{
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        color:white;
+}
+
 #jo{
   margin-left: 3%;
   position: relative;
@@ -227,13 +245,24 @@ hr{
   top: 10em;
 }
 #praAir{
+  font-family: 'Dela Gothic One', cursive;
   margin-left: 4%;
   z-index: 1;
   position: relative;
   top: -12em;
   /* left: 1em; */
-  color:rgb(216, 213, 213);
+  color:#022a3f;
 }
+
+#praAir:hover{
+  color:white;
+  -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        color:white;
+}
+
+
 #airb{
   font-size: 1.5em;
   z-index: 1;
@@ -250,6 +279,36 @@ hr{
         -ms-transform: scale(1.3);
         transform: scale(1.3);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* .slideshow-container1 {
     max-width: 1000px;
     position: relative;
