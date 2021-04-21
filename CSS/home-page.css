@@ -1,5 +1,3 @@
- 
-
 .slideshow-container {
   width: 99%;
   height: 40em;
@@ -8,12 +6,6 @@
   margin: top 60px;
   
 }
-
-/* #welcome {
-color: orange;
-text-align: center;
-font-family: 'Dela Gothic One', cursive;
-margin-top: 0.2em;} */
 
 
 .mySlides {
@@ -115,9 +107,9 @@ width: 100%;
 margin-top: 30em;
 }
 .ii:hover{
-        -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-        transform: scale(1.3);
+        -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        transform: scale(1.15);
 }
 #images a {
   
@@ -125,33 +117,40 @@ position: relative;
 left: 5px;
 top: 3em;
 } */
+
+
 #final{
   display: inline;
   position: relative;
   top: 3em;
+  height: 200px;
 }
+
 #camel{
   display: inline-block;
   position: relative;
   top: 200px;
 }
+
+
 #storyV{
   z-index: 2;
   position: relative;
-  top: -22em;
-  right: 20em;
-  /* opacity: 0.9; */
-  font-size: 1em;
-  background-color:#d6b181;
-  color:#6b5434;
-  width: 10em;
-  height: 3.2em;
+  top: -14em;
+  right: 18em;
+
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.5em;
+  background-color: rgba(102, 0, 0, 0.89);
+  color: rgb(218, 216, 216);
 }
+
 #storyV:hover{
         -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
         transform: scale(1.3);
 }
+
 #pra1{
   position: relative;
   margin-left: 30%;
@@ -162,6 +161,7 @@ top: 3em;
   opacity: 0.3;
   font-family: 'Fredoka One', cursive;
 }
+
 #coffe{
   position: relative;
   top: -17.8em;
@@ -171,21 +171,18 @@ top: 3em;
 .pra2{
   position: relative;
   top: 8em;
-  text-align: justify;
-  margin-left: 3%;
-  font-size: 1.5em;
-  color: #022a3f;
+  margin-left: 5%;
+  margin-right: 5%;
   z-index: 2;
-  
-  font-family: 'Dela Gothic One', cursive;
+  font-weight: bold;
+
+  color: #022a3f;
+  font-size: 1.4em;
+  font-family: 'Almarai', sans-serif;
+  text-align: justify;
+  line-height: 1.35em;
 }
 
-/* .pra2 span{
-  color: orange;
-  font-size: 0.2em;
-  text-align: center;
-  font-family: 'Dela Gothic One', cursive;
-} */
 
 .pra2:hover{
         -webkit-transform: scale(1.05);
@@ -198,19 +195,11 @@ top: 3em;
   margin-left: 3%;
   position: relative;
   top: 5em;
-  /* left: 2em; */
-  /* right: 2em; */
-  /* bottom: auto; */
   font-size: 1.5em;
   color: #cca36d;
   z-index: 1;
 }
-/* #jo:hover
-{
-        -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-        transform: scale(1.3);
-} */
+
 hr{
   color: #717171;
   position: relative;
@@ -218,31 +207,25 @@ hr{
  width: 98%;
  
 }
-#fo{
-  /* position: relative;
-  top: -200px;
-  text-align: center;
-  clear: both; */
-  position: relative;
-  /* left: 115px; */
-  
-  top: -60px;
-  color: #717171;
-   font-family: 'Fredoka One', cursive;
 
-  }
 #air{
   position: relative;
   top: 10em;
 }
 #praAir{
-  font-family: 'Dela Gothic One', cursive;
   margin-left: 4%;
+  width: 39%;
   z-index: 1;
   position: relative;
-  top: -12em;
-  /* left: 1em; */
-  color:#022a3f;
+  top: -9em;
+
+  font-weight: bold;
+
+  color: #022a3f;
+  font-size: 1.4em;
+  font-family: 'Almarai', sans-serif;
+  text-align: justify;
+  line-height: 1.35em;
 }
 
 #praAir:hover{
@@ -255,13 +238,15 @@ hr{
 
 
 #airb{
-  font-size: 1.5em;
-  z-index: 1;
   height: 2.2em;
   width: 7em;
   position: relative;
-  top: -6em;
+  top: -7em;
   left: 3em;
+
+  z-index: 1;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.5em;
   background-color:rgba(102, 0, 0, 0.89);
   color: rgb(218, 216, 216);
 }
@@ -281,10 +266,11 @@ hr{
   display: block;
   position: relative;
   top: 15em;
-  color: #3f7491bd;
-  font-size: 1.2em;
-  font-family: 'Dela Gothic One', cursive;
+  color: #022a3f;
+  font-size: 1.4em;
+  font-family: 'Almarai', sans-serif;
   text-align: justify;
+  line-height: 1.35em;
 }
 
 #info p:hover{
@@ -292,95 +278,8 @@ hr{
 }
 
 
-
 #info #infoimg {
   width:50%;
 }
 
 
-
-
-
-
-
-
-  /* .slideshow-container1 {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-   }
-
-   .mySlides1 {
-     display: none;
-   }
- 
-   .prev1, .next1 {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-   }
-
-   .next1 {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-   }
-   
-   .prev1:hover, .next1:hover {
-    background-color: rgba(0,0,0,0.8);
-   }
-   .text1 {
-    color: #F2F2F2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-   }
-
-   .numbertext1 {
-    color: #F2F2F2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-   }
-  
-   .dot1 {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-   }
-   .active1, .dot1:hover {
-    background-color: #717171;
-   }
-  
-   .fade1 {
-    -webkit-animation-name: fade1;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade1;
-    animation-duration: 1.5s;
-   }
-   @-webkit-keyframes fade1 {
-    from {opacity: .4}
-    to {opacity: 1}
-   }
-   @keyframes fade1 {
-    from {opacity: .4}
-    to {opacity: 1}
-   } */
-   
