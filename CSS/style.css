@@ -45,25 +45,26 @@ nav{
 }
 
 nav a{
-  display: inline-block;
+  /* display: inline-block; */
   text-decoration: none;
-  padding: 30px 15px;
+  padding: 32px 9px;
   font-size: 0.9em;
   font-weight: bold;
-  
   color: black;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.09em;
+  font-family: 'Dela Gothic One', cursive;
+  text-align: justify;
 }
 
 nav a:hover{
-  background:#e9cece;
   color: red;
 }
 
 #cart {
     width: 100%;
   height: 100%;
+align-items: center;
 }
 
 nav img {
@@ -84,4 +85,10 @@ main{
 footer{
 
   margin-left: 220px;
+}
+body{
+  background-color: #f5eee5;
+}
+nav{
+  background-color: #f5eee5;
 }
