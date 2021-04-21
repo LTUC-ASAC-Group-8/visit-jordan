@@ -14,14 +14,19 @@ div section{
  }
 
  h2{
+     color: #807567;
      /* display: inline-block; */
      float: left;
      width: 30%;
      margin-left: 3%;
+     font-family: 'Chelsea Market', cursive;
+
+    
  }
 
 
   section p{
+      color: #3F7491;
       overflow:scroll;
       height:11em ;
       margin-left: 3%;
@@ -32,6 +37,7 @@ div section{
       text-align: justify;
       line-height: 1.5em;
       font-size: 0.9em;
+      
       /* margin: 0; */
       /* float: right; */
      /* margin-right: 15%; */
@@ -40,12 +46,23 @@ div section{
  button{
     /* display: inline-block; */
 
+
+    background-color: rgba(102, 0, 0, 0.89);
+    color: #CCAB81;
     position: absolute;
     bottom: 0;
     left: 55%;
     width: 10%;
     height: 2em;
     /* font-size: 18px; */
+}
+
+button:hover{
+    color:white;
+  -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        color:white;
 }
 
  iframe , video{

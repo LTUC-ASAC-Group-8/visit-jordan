@@ -22,7 +22,7 @@ margin-top: 0.2em;} */
 .slideimg{
   transform: translate3d(0, 0, 1px);
   position: relative;
-  top:-5em;
+  top:-3em;
   width: 99%;
   height: 34.8em;
   opacity: 0.6;
@@ -294,8 +294,14 @@ hr{
 
 
 #info #infoimg {
-  width:55%;
+  width:50%;
 }
+
+
+
+
+
+
 
 
   /* .slideshow-container1 {
