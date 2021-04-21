@@ -70,6 +70,17 @@ new Trip('Wadi al hidan', "Wadi Al Hidan is one of Jordan's most scenic and beau
 
 
 
+// fill these
+
+// new Trip('', "", 'images/places-images/PELLA.jpg', '');
+
+// new Trip('', "", 'images/places-images/PELLA.jpg', '');
+
+// new Trip('', "", 'images/places-images/PELLA.jpg', '');
+// new Trip('', "", 'images/places-images/PELLA.jpg', '');
+
+
+
 
 
 
