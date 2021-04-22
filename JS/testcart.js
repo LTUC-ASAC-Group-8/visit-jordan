@@ -38,7 +38,7 @@ function renderBookedImages() {
 
     let renderdimage = document.createElement('img');
     renderdsection.appendChild(renderdimage);
-    renderdimage.setAttribute('src', bookedArrayString[i].img1);
+    renderdimage.setAttribute('src', bookedArrayString[i].img4);
     renderdimage.setAttribute('class', 'renderdimage');
 
     //  create the name element
@@ -81,23 +81,23 @@ function renderBookedImages() {
 
       if (counter === 0) {
 
-        let confirmMassge= confirm(`the package ${bookedArrayString[i].name} will be deleted`);
+        let confirmMassge = confirm(`the package ${bookedArrayString[i].name} will be deleted`);
         console.log(confirmMassge);
 
-        if( confirmMassge === true){
+        if (confirmMassge === true) {
           renderdimage.remove();
           renderdname.remove();
           renderdprice.remove();
           deleteButton.remove();
           renderdcounter.remove();
           addButton.remove();
-        }else{
-          counter=1;
+        } else {
+          counter = 1;
           total += parseInt(bookedArrayString[i].price);
           renderdprice.textContent = `${parseInt(bookedArrayString[i].price) * counter} $`;
         }
         console.log('hello from  if ');
-        
+
       } else if (counter > 0) {
         renderdcounter.textContent = counter;
         console.log('hello from else ');
@@ -149,7 +149,7 @@ function renderBookedImages() {
 
   let renderdTotal = document.createElement('h3');
   totalContainer.appendChild(renderdTotal);
-  renderdTotal.textContent = 'Total';
+  renderdTotal.textContent = 'Total :';
   renderdTotal.setAttribute('class', 'renderdTotal');
 
   //  print the total
@@ -171,21 +171,75 @@ purchaseButton.addEventListener('click', purchaseEvent);
 function purchaseEvent(event) {
 
   event.preventDefault();
-  alert(`Thank you for purchasing \nyour total is ${total} `);
+  // alert(`Thank you for purchasing \nyour total is ${total} `);
 
   // clear items and total after purches
 
   bookedImagesContan.textContent = '';
   renderdTotalNmber.textContent = '0';
 
-  localStorage.clear();
-  // console.log(localstorage);
-
+  localStorage.removeItem("bookedPackage");
 
 }
 
+// crating a modele box for conferming 
+
+let formElement = document.getElementById("form");
+
+//create purchasing model box
+let modelBoxPurchasing = document.createElement('div');
+formElement.appendChild(modelBoxPurchasing);
+modelBoxPurchasing.setAttribute('class', 'modelBoxPurchasing');
+
+//create Description model div
+let modelBoxdiv2 = document.createElement('div');
+modelBoxPurchasing.appendChild(modelBoxdiv2);
+modelBoxdiv2.setAttribute('class', 'modelBoxdiv2');
 
 
+//create Description span
+let modelBoxSpan = document.createElement('span');
+modelBoxdiv2.appendChild(modelBoxSpan);
+modelBoxSpan.setAttribute('class', 'modelBoxSpan');
+modelBoxSpan.textContent = 'x';
 
+//create description2 content
+let descriptionContent2 = document.createElement('p');
+modelBoxdiv2.appendChild(descriptionContent2);
+descriptionContent2.textContent = `Thank you for purchasing `;
+descriptionContent2.setAttribute('class', 'descriptionContent2');
+
+
+//create description content
+let descriptionContent = document.createElement('p');
+modelBoxdiv2.appendChild(descriptionContent);
+descriptionContent.textContent = `your total is ${total} $ `;
+descriptionContent.setAttribute('class', 'descriptionContent');
+
+//create description content
+let descriptionContent3 = document.createElement('p');
+modelBoxdiv2.appendChild(descriptionContent3);
+descriptionContent3.textContent = `Engoy your trip!`;
+descriptionContent3.setAttribute('class', 'descriptionContent3');
+
+
+// add event for Description button
+
+// When the user clicks on the button, open the modal
+purchaseButton.onclick = function () {
+  modelBoxPurchasing.style.display = 'block';
+};
+
+// When the user clicks on <span> (x), close the modal
+modelBoxSpan.onclick = function () {
+  modelBoxPurchasing.style.display = 'none';
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modelBoxPurchasing) {
+    modelBoxPurchasing.style.display = 'none';
+  }
+}
 
 

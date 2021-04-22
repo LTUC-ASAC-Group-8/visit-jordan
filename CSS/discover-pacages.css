@@ -1,5 +1,7 @@
 
-
+*{
+  box-sizing: border-box;
+}
 /* The dots/bullets/indicators */
 .dotElement {
   height: 10px;
@@ -19,19 +21,33 @@
   margin: .45em;
   padding: 1em;
   text-decoration: none;
-  margin-left: 7%;
+  margin-left: 3.2em;
   margin-right: 7%;
-  background-color: rgba(187, 187, 187, 0.548);
+  background-color: rgba(187, 187, 187, 0.788);
   position: fixed;
-  margin-top: 1em;
-  width: 60%; 
+  /* margin-top: .5em; */
+  width: 76%; 
+  z-index: 3;
+  height: 4em;
+  border-radius: 15px;
 }
+
 #ournav li  {
   display:inline-block;
-  margin-left: 4.5em;
+  margin-left: 5em;
+  vertical-align: middle;
+  line-height: 2em;
 }
+
 #ournav li a {
   color: black;
+  font-size: 17px;
+  /* font-weight: bold; */
+  letter-spacing: 5px;
+}
+
+#ournav li a:hover {
+  color: red;
 }
 
 #parent-container{
@@ -40,24 +56,39 @@
   margin-right: 2.5%;
   padding: 1em;
   padding-top: 5em ;
+  /* background-color: rgb(129, 9, 9); */
 }
 
 .bigSection{
   border: solid 2px rgba(192, 192, 192, 0.712) ;
+  /* background-color: #f5eee5; */
   width: 32.5%;
   display: inline-block;
   margin: .2em;
   padding: .2em;
   padding-left: .7em;
+  border-radius: 5%;  
+
+}
+.bigSection:hover{
+  background-color: rgba(32, 25, 25, 0.089);
+  transform: scale(1.05);
 }
 
+
 .package-img{
-  border: solid 2px red;
+  /* border: solid 2px red; */
+  width: 355px;
+  height: 250px;
+  border-radius: 5%;  
+
 }
 
 .slides{
   /* border: solid 2px rgb(0, 38, 255); */
   position: absolute;
+  border-radius: 5%;  
+
 }
 
 .imgNumber{
@@ -74,7 +105,8 @@
 
 .packageName{
   color: black;
-  font-size: larger;
+  font-size: 23px;
+  text-align: center;
   margin-bottom: .2em;
   margin-left: .2em;
 
@@ -83,17 +115,28 @@
 .packagePrice{
   margin-bottom: .2em;
   margin-left: .2em;
+  text-align: center;
+
 }
 
 
 .Description ,.bookingButton{
   margin: .5em;
-  padding: .4em; 
-  margin-left: 15%;
+  padding: .3em; 
+  margin-left: 12%;
   padding-left: .6em;
   padding-right: .6em;
+  text-align: center;
+  width: 8em;
+  font-size: 14px;
+  border-radius: 6px;  
 
 }
+
+.Description:hover ,.bookingButton:hover{
+  color: red;
+}
+
 
 /* The Modal (background) */
 .modelBoxcont {
@@ -110,7 +153,7 @@
 
 /* Modal Content/Box */
 .modelBoxdiv2 {
-  background-color: #fefefe;
+  background-color: #e42323e3;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
@@ -119,7 +162,7 @@
 
 /* The Close Button */
 .modelBoxSpan {
-  color: #aaa;
+  color: whitesmoke;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -131,15 +174,32 @@
   cursor: pointer;
 }
 
+.descriptionContent0{
+  /* margin-top: 0.7em; */
+  letter-spacing: 0.08em;
+  font-size: 2em;
+  padding: 0.2em;
+  color: whitesmoke;
 
 
+}
+.descriptionContent1{
+  margin-top: 0.7em;
+  letter-spacing: 0.08em;
+  line-height: 2em;
+  border: 0.1em dashed rgb(247, 243, 243);
+  padding: 0.4em;
+}
 
-
-
-
-
-
-
-
+.descriptionContent2{
+  margin-top: 0.7em;
+  letter-spacing: 0.08em;
+  line-height: 2em;
+  color: rgb(7, 7, 7);
+  /* font-weight: 0.1em; */
+  padding: 0.4em;
+  border: 0.1em dashed rgb(247, 243, 243);
+  
+}
 
 

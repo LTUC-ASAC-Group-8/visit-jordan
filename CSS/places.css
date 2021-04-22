@@ -1,51 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+
+#ournav{
+    z-index: 1;
+    margin: .45em;
+    padding: 1em;
+    text-decoration: none;
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color: rgba(187, 187, 187, 0.548);
+    position: fixed;
+    margin-top: 1em;
+    width: 60%; 
+  }
+
+
+  #ournav li  {
+    display:inline-block;
+    margin-left: 4.5em;
+  }
+  #ournav li a {
+    color: black;
+  }
+  
+
+
 div section{
     position: relative;
-     margin-top: 4em;
-     height: 14em;
+    padding-top: 6em;
+    height: 20em;
  }
+
  
- img{
+section img{
      float: left;
      width: 30%;
      margin-left: 2%;
      height: 14em;;
-     /* display: block; */
+  
 
  }
 
+
+ section img:hover{
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
+ 
+
  h2{
-     /* display: inline-block; */
+     color: #3F7491;
+    font-size: 1.3em;
      float: left;
      width: 30%;
      margin-left: 3%;
+     font-family: 'Chelsea Market', cursive;
+
+    
  }
 
 
   section p{
       overflow:scroll;
-      height:11em ;
+      height:9.5em ;
       margin-left: 3%;
       margin-right: 3%;
       width: 30%;
       display: inline-block;
 
+      color: #022a3f;
+      background-color: #8cc1de17;
+      font-size: 1em;
+      font-family: 'Almarai', sans-serif;
       text-align: justify;
-      line-height: 1.5em;
-      font-size: 0.9em;
-      /* margin: 0; */
-      /* float: right; */
-     /* margin-right: 15%; */
+      line-height: 1.35em;
+      margin-top: 1em;
+      
  }
 
- button{
-    /* display: inline-block; */
 
+
+ 
+ button{
+  z-index: 1;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1em;
+  background-color:rgba(102, 0, 0, 0.89);
+  color: rgb(218, 216, 216);
     position: absolute;
     bottom: 0;
-    left: 55%;
-    width: 10%;
+    left: 53%;
+    width: 12%;
     height: 2em;
-    /* font-size: 18px; */
+}
+
+
+
+button:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
  iframe , video{

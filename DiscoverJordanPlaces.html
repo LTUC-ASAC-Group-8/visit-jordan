@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Jordan|Places</title>
     <link rel="stylesheet" href="CSS/places.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fredoka+One&display=swap"
@@ -17,25 +14,68 @@
 <body>
 
     <nav>
-        <img id="logo" src="/img/logo.png" alt="">
-        <a href="#">Home</a>
-        <a href="#">Journies </a>
-        <a href="#">Maps</a>
-        <a href="#">Favourite</a>
-        <img id="cart" src="/img/images.png" alt="cart">
+
+        <img id="logo" src="images/logo.png" alt="">
+
+
+        <a href="index.html">HOME</a>
+        <a class="icons" href="index.html"><img src="images/Template/home.png" alt="HOME"></a>
+
+        <a href="DiscoverJordanPlaces.html">DISCOVER JORDAN</a>
+        <a class="icons" href="DiscoverJordanPlaces.html"><img src="images/Template/discover.png"
+                alt="DISCOVER JORDAN"></a>
+
+        <a href="stories.html">STORIES</a>
+        <a class="icons" href="stories.html"><img src="images/Template/story.png" alt="STORIES"></a>
+
+        <a href="favorite.html">FAVOURITE</a>
+        <a class="icons" href="favorite.html"><img src="images/Template/favourite.png" alt="FAVOURITE"></a>
+
+        <a href="cart.html">CART</a>
+        <a class="icons" href="cart.html"><img src="images/Template/cart.png" alt="CART"></a>
+
     </nav>
+
     <p id="flag"></p>
 
 
     <main>
+
+
+        <div id="sec-header">
+            <div id="ournav">
+                <ul>
+                    <li><a href="DiscoverJordanPackages.html">Packages</a></li>
+                    <li><a href="DiscoverJordanPlaces.html">Places</a></li>
+
+                </ul>
+
+                <!-- <div class="search-container">
+                    <form action="">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+
+
+
         <div id="container">
-        </div>     
+        </div>
     </main>
 
 
-    <footer></footer>
+    <footer>
+        <hr>
+        <p id="fo" style="text-align: center;">
+            &copy; 2021 visit Jordan.
+        </p>
+        <img id="social" src="images/Template/social-media.png" alt="social-media">
+</footer>
 
     <script src="JS/places.js"></script>
 </body>
 
 </html>
+
