@@ -158,7 +158,7 @@ if (favouriteJourneys !== null && favouriteJourneys.length !== 0) {
     let parent = document.getElementById('link');
     let link = document.createElement('a');
     parent.appendChild(link);
-    link.setAttribute('href','DiscoverJordanPlaces.html');
+    link.setAttribute('href',`DiscoverJordanPlaces.html`);
     link.setAttribute('id','empty-link')
     
     link.textContent = ('You Can Add A Place To Your Favourite List, Click on Discover Jordan!');

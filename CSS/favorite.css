@@ -6,7 +6,7 @@
  text-align: right;
  margin-right: 2%;
  margin-top: 16px;
- background-color: ;
+ /* background-color: ; */
 }
 
 #imageContainer article{
@@ -23,7 +23,7 @@ div img{
 
 
 #detailsContainer{
-  position: fixed;
+  /* position: fixed; */
   float: left;
   width: 55%;
   margin-left: 5%;
@@ -95,8 +95,10 @@ video {
   padding-left: 5em;
 } 
 
+#link:hover{
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
 
-
-
-
+}
 

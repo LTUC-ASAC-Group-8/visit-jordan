@@ -17,7 +17,7 @@
   background-color: #717171;
 }
 
-#ournav{
+/* #ournav{
   margin: .45em;
   padding: 1em;
   text-decoration: none;
@@ -25,12 +25,11 @@
   margin-right: 7%;
   background-color: rgba(187, 187, 187, 0.788);
   position: fixed;
-  /* margin-top: .5em; */
   width: 76%; 
   z-index: 3;
   height: 4em;
   border-radius: 15px;
-}
+} */
 
 #ournav li  {
   display:inline-block;
@@ -51,16 +50,17 @@
 }
 
 #parent-container{
-  border: solid 2px ;
+  
+  border: solid 2px rgba(100, 148, 237, 0.699) ;
   margin-left: 2.5%;
   margin-right: 2.5%;
   padding: 1em;
   padding-top: 5em ;
-  /* background-color: rgb(129, 9, 9); */
+  background-color:#8cc1de17 ; 
 }
 
 .bigSection{
-  border: solid 2px rgba(192, 192, 192, 0.712) ;
+  border: solid 2px rgba(100, 148, 237, 0.329) ;
   /* background-color: #f5eee5; */
   width: 32.5%;
   display: inline-block;
@@ -104,11 +104,13 @@
 }
 
 .packageName{
-  color: black;
-  font-size: 23px;
-  text-align: center;
   margin-bottom: .2em;
   margin-left: .2em;
+  text-align: center;
+  color: #022a3f;
+  font-size: 1.4em;
+  font-family: 'Almarai', sans-serif;
+  line-height: 1.35em;
 
 }
 
@@ -116,6 +118,10 @@
   margin-bottom: .2em;
   margin-left: .2em;
   text-align: center;
+  font-family: 'Almarai', sans-serif;
+  color: #022a3f;
+  font-weight: bolder;
+
 
 }
 
@@ -127,15 +133,19 @@
   padding-left: .6em;
   padding-right: .6em;
   text-align: center;
-  width: 8em;
-  font-size: 14px;
+  width: 7em;
   border-radius: 6px;  
+  font-size: 1.08em;
+  font-family: 'Fredoka One', cursive;
+  background-color:rgba(102, 0, 0, 0.89);
+  color: rgb(218, 216, 216);
 
 }
 
 .Description:hover ,.bookingButton:hover{
-  color: red;
-}
+  -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1);}
 
 
 /* The Modal (background) */
@@ -153,19 +163,21 @@
 
 /* Modal Content/Box */
 .modelBoxdiv2 {
-  background-color: #e42323e3;
+  background-color: #8cc1decc;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+  transform: translate3d(70px, 1px, 1px);
 }
 
 /* The Close Button */
 .modelBoxSpan {
-  color: whitesmoke;
+  color: #022a3f;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  
 }
 
 .modelBoxSpan:hover {
@@ -179,7 +191,9 @@
   letter-spacing: 0.08em;
   font-size: 2em;
   padding: 0.2em;
-  color: whitesmoke;
+  color: #022a3f;
+  font-family: 'Almarai', sans-serif;
+  font-weight: 900;
 
 
 }
@@ -187,18 +201,20 @@
   margin-top: 0.7em;
   letter-spacing: 0.08em;
   line-height: 2em;
-  border: 0.1em dashed rgb(247, 243, 243);
+  border: 0.1em dashed #022a3f;
   padding: 0.4em;
+  color: #022a3f;
+font-weight:700;
 }
 
 .descriptionContent2{
   margin-top: 0.7em;
   letter-spacing: 0.08em;
   line-height: 2em;
-  color: rgb(7, 7, 7);
-  /* font-weight: 0.1em; */
+  color: #022a3f;
+  font-weight: 700;
   padding: 0.4em;
-  border: 0.1em dashed rgb(247, 243, 243);
+  border: 0.1em dashed #022a3f;
   
 }
 

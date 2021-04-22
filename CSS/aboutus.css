@@ -1,22 +1,21 @@
 *{
     box-sizing: border-box;
 }
-/* #hiba{
 
-    margin-left: 24em;
-    margin-top: 4em;
-}
-#hibaimg{
-    border-radius: 50%;
-} */
 h1{
     font-size: 5em;
-    margin-left: 8.2em;
-    margin-top: 1em;
-    color: rgb(92, 8, 8);
+    margin-left: 8.2em;    
+ color: #022a3f;
+ font-family: 'Almarai', sans-serif;
 }
 #imm{
     margin-left: 21em;
+}
+.about{
+    
+ color: #022a3f;
+
+ font-family: 'Almarai', sans-serif;
 }
 #hiba{
     z-index: 2;
@@ -28,6 +27,11 @@ h1{
 
     font-size: initial;
     color: rgb(92, 8, 8);
+    font-weight: bolder;
+    
+ color: #022a3f;
+
+ font-family: 'Almarai', sans-serif;
 }
 #dana{
     z-index: 2;
@@ -51,6 +55,12 @@ h1{
    /* margin-left: .2em; */
     font-size: initial;
     color: rgb(92, 8, 8);
+    font-weight: bolder;
+    
+ color: #022a3f;
+
+ font-family: 'Almarai', sans-serif;
+
 }
 .soc{
     margin-left: 5.1em;
@@ -63,6 +73,8 @@ h1{
 }
 .aboutahmad{
     margin-left: 3em;
+   color: #022a3f;
+     font-family: 'Almarai', sans-serif;
 }
 .socahmad{
     margin-left: 7.4em;
@@ -78,12 +90,24 @@ h1{
     /* margin-left: 2.9em; */
      font-size: initial;
      color: rgb(92, 8, 8);
+     font-weight: bolder;
+     
+ color: #022a3f;
+
+ font-family: 'Almarai', sans-serif;
+
  }
  .name3{
     margin-left: 2.9em;
     /* margin-left: .2em; */
      font-size: initial;
      color: rgb(92, 8, 8);
+     font-weight: bolder;
+     
+ color: #022a3f;
+
+ font-family: 'Almarai', sans-serif;
+
  }
  .sock{
     margin-left: 3.5em;
@@ -99,9 +123,16 @@ h1{
 }
 .aboutyahia{
     margin-left: -1em;
+    
+ color: #022a3f;
+
+ font-family: 'Almarai', sans-serif;
 }
 .namey{
    
      font-size: initial;
      color: rgb(92, 8, 8);
+     font-weight: bolder;
+     color: #022a3f;
+     font-family: 'Almarai', sans-serif;
  }
