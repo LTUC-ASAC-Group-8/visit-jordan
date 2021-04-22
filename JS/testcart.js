@@ -219,7 +219,7 @@ descriptionContent.setAttribute('class', 'descriptionContent');
 //create description content
 let descriptionContent3 = document.createElement('p');
 modelBoxdiv2.appendChild(descriptionContent3);
-descriptionContent3.textContent = `Engoy your trip!`;
+descriptionContent3.textContent = `Enjoy your trip!`;
 descriptionContent3.setAttribute('class', 'descriptionContent3');
 
 

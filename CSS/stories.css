@@ -1,15 +1,7 @@
 
-#add{
-   border: solid rgba(100, 148, 237, 0.329);
-   position: fixed;
-   right: 1em;
-   top: 3em;  
-   width: 20em;
-   height: 37em;
-   background-color:#8cc1de17 ; 
-}
+
  #feedback{
-   border: solid rgba(100, 148, 237, 0.329);
+   border: 2px rgb(172, 171, 171) dashed;
 
    position: relative;
    top: 6em;
@@ -17,15 +9,17 @@
    width: 18em;
    height: 12em;
    background-color: #8cc1de17;
+   border-radius: 15px;
 }
 #uploadImage{
-   border: solid rgba(100, 148, 237, 0.329);
+   border: 2px rgb(172, 171, 171) dashed;
    position: relative;
    top: 9em;
    left: 2.8em;
    width: 18em;
    height: 7em;
    background-color :#8cc1de17;
+   border-radius: 15px;
 }
 #fe{
    font-family: 'Fredoka One', cursive;
@@ -56,9 +50,13 @@
    background-color:rgba(102, 0, 0, 0.89);
    color: rgb(218, 216, 216);
    position: relative;
-   left: 11em;
+   left: 5em;
    top: 8em;
-   font-size: 1.2em;
+   font-size: 1.3em;
+   text-align: center;
+   width: 6em;
+    border-radius: 6px;
+
 }
 
 #submit:hover{
@@ -102,5 +100,47 @@
    position: relative;
    top: -16em;
 }
+
+
+#add{
+   border: solid rgba(100, 148, 237, 0.329);
+   position: fixed;
+   right: 1em;
+   top: 3em;  
+   width: 20em;
+   height: 37em;
+   background-color:#8cc1de17 ; 
+   border-radius: 15px;
+}
+
+div img{
+   border-radius: 15px;
+}
+
+
+
+/* fieldset{
+   border: solid rgba(100, 148, 237, 0.329);
+   position: absolute;
+   position: fixed;
+   right: 2.5%;
+   top: 10%;
+   width: 440px;
+   height: 500px;
+   background-color: #8cc1de17;
+   margin-right: 30px;
+   border-radius: 5%;
+ 
+ } */
+ 
+ /* #form{
+   border: 2px rgb(172, 171, 171) dashed;
+   background-color:#8cc1de1f ;
+   margin: 15px;
+   padding:10px;
+   margin-top: 20px;
+   padding-top: 10px;
+   
+ } */
 
 

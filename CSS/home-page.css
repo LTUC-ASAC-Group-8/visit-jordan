@@ -122,8 +122,8 @@ top: 3em;
 #final{
   display: inline;
   position: relative;
-  top: 3em;
-  height: 200px;
+  top: 2em;
+  size: fit-content;
 }
 
 #camel{
@@ -200,13 +200,7 @@ top: 3em;
   z-index: 1;
 }
 
-hr{
-  color: #717171;
-  position: relative;
-  top: -100px;
- width: 98%;
- 
-}
+
 
 #air{
   position: relative;
@@ -283,3 +277,10 @@ hr{
 }
 
 
+
+
+footer{
+position: relative;
+bottom: 300px;
+
+}

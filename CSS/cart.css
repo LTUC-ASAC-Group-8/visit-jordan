@@ -244,7 +244,7 @@ fieldset{
   overflow: auto; /* Enable scroll if needed */
   /*background-color: rgba(0, 0, 0, 0.521);  Black w/ opacity */
   visibility: hidden ;
-  animation: mymove 60s ;
+  animation: mymove 3s ;
 }
 @keyframes mymove {
   from {visibility: hidden ;}

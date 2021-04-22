@@ -53,6 +53,10 @@ nav{
 }
 
 
+#home{
+margin-top: 70px;
+}
+
 
 nav a{
   /* position: fixed; */
@@ -80,7 +84,7 @@ nav a:hover{
 .icons{
 width: 30%;
 position: relative;
-right: 5em;
+right: 4.5em;
 bottom: 1.4em;
 padding-top: 0;
 text-align: none;
