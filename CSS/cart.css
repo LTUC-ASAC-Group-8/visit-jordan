@@ -1,17 +1,19 @@
 *{
     box-sizing: border-box;
   }
+  
  #Your-cart{
-       /* border: 2px red solid; */
-
+   /* border: 2px red solid; */
    margin: 5px;
    padding: 5px;
    font-size: 45px;
-   margin-left: 30px;
-   padding-top: 50px;
-   /* font-weight: 50; */
+   margin-left: 200px;
+   padding-top: 60px;
+   letter-spacing: 8px;
+   margin-bottom: 10px;
    /* text-align: left; */
    /* line-height:200px; */
+   /* text-align: center; */
  }
   
   
@@ -27,80 +29,112 @@
    padding: 5px;
    margin-bottom: 10px;
    margin-top: 7px;
-  
+   margin-left: 60px;
+   width: 575px; 
+   border-radius: 25px;
+
+
+  }
+  .renderdsection:hover{
+    background-color: rgba(32, 25, 25, 0.089);
   }
 
   .renderdimage{
-    width: 90%;
-    /* height: 175px; */
+    width: 95%;
     padding-right: 5px;
-    padding-left: 47.5px;
+    padding-left: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
-    
+    width: 550px;
+    height: 320px;
+    border-radius: 25px;
+    margin-left: 6.5px;
   }
 
   .renderdname{
     /* border: 2px rgb(31, 28, 28) solid; */
     width: fit-content;
-    margin-left: 47.5px;
-    font-size: 22px;
-    /* display: inline-block; */
+    margin-left: 120px;
+    font-size: 25px;
   }
+
 .renderdprice{
   /* border: 2px rgb(31, 28, 28) solid; */
   width: fit-content;
-  font-size: 20px;
+  font-size: 24px;
   position: relative;
   left: 350px;
-  bottom: -15px;
+  bottom: -18px;
   /* display: inline-block; */
-
+  color: rgb(158, 11, 11);
 }
 
 .renderDivContainer{
-  /* border: 2px rgb(31, 28, 28) solid; */
-  height: 30px;
-  margin-top: -7px;
-  padding-top: 2px;
-  margin-left: 35px;
+  border: 2px rgba(31, 28, 28, 0.288) dashed;
+  height: 36px;
+  margin-top: -10px;
+  padding-top: 1px;
+  margin-bottom: 5px;
+  margin-left: 120px;
+  width: fit-content;
+  background-color: rgba(169, 169, 169, 0.226);
+
 }
+
+
 .deleteButton{
   /* margin-top: 20px; */
-  margin-left: 40px;
   width: 5%;
   float: left;
   /* display: inline-block; */
+  width: 2.2em;
+  font-size: 16px;
+  border-radius: 6px;  
+  padding: .2em; 
+  text-align: center;
+}
+.deleteButton:hover{
+  background-color: rgba(218, 15, 0, 0.788);
+
 }
 
 .renderdcounter{
-  /* display: inline-block; */
-  /* margin-top: 20px; */
+ 
   margin-left: 33px;
   float: left;
+  font-size: 22px;
+  margin-top: 4px;
+
 }
 
 .addButton{
-  /* float: right; */
-  /* display: inline-block; */
-  /* margin-top: 20px; */
+
   margin-left: 35px ;
-  width: 5%;
+  width: 2.2em;
+  padding: .2em; 
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;  
 }
+.addButton:hover{
+  background-color: rgba(7, 134, 45, 0.692);
+}
+
 #totalContainar{
   /* border: 2px rgb(31, 28, 28) solid; */
   font-size: 25px;
   text-align: center;
   padding-right: 100px;
   margin-top: 25px;
-  
 
 }
+
 .renderdTotal{
   /* border: 2px rgb(180, 12, 12) solid; */
   width: fit-content;
   display: inline-block;
   margin: 10px;
+
 }
 
 .renderdTotalNmber{
@@ -108,10 +142,11 @@
   width: fit-content;
   display: inline-block;
   margin: 10px;
-
-
-
+  color: rgb(158, 11, 11);
+  
 }
+
+
 
 fieldset{
   /* border: 2px rgb(79, 180, 12) solid; */
@@ -119,37 +154,45 @@ fieldset{
   position: fixed;
   right: 2.5%;
   top: 10%;
-  width: 400px;
+  width: 440px;
   height: 500px;
   background-color: lightgray;
+  margin-right: 30px;
+  border-radius: 5%;
 
 }
 
 #form{
-  border: 2px rgb(151, 124, 130) solid;
-  margin: 5px;
+  border: 2px rgb(172, 171, 171) dashed;
+  margin: 15px;
   padding:10px;
   margin-top: 20px;
+  border-radius: 5%;
+  padding-top: 10px;
+  
 }
 
 #name,#email, #phone{
   padding: 5px;
   margin: 5px;
+  margin-left: 10%;
+  border-radius: 5px;
 }
 
-#purchase{
-  padding: 5px;
-  margin: 5px;
-  font-size: 18px;
-  margin-top: 15px;
-  margin-left: 17%;
-  /* font-weight: lighter; */
-
+#name:hover ,#email:hover , #phone:hover{
+  color:rgba(250, 21, 21, 0.541);
+  background-color: rgba(0, 0, 0, 0.288); 
 }
+
+#name:focus ,#email:focus , #phone:focus{
+  color:rgba(250, 21, 21, 0.541);
+  background-color: rgba(36, 36, 36, 0.021); 
+}
+
 
 #message{
   /* border: 2px rgb(151, 124, 130) solid; */
- color: rgba(255, 255, 255, 0.774);
+ color: rgba(255, 255, 255, 0.548);
  font-size: 35px;
  letter-spacing: 5px;
  margin: 5px;
@@ -159,6 +202,84 @@ fieldset{
  padding: 5px;
  line-height: 50px;
  text-align: center;
+}
+
+
+/* The Modal (background) */
+.modelBoxPurchasing {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  /*background-color: rgba(0, 0, 0, 0.521);  Black w/ opacity */
+  visibility: hidden ;
+  animation: mymove 1.5s ;
+}
+@keyframes mymove {
+  from {visibility: hidden ;}
+  to { visibility: visible;}
+}
+
+/* Modal Content/Box */
+.modelBoxdiv2 {
+  background-color: #e42323e3;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+  border-radius: 15px;
+
+}
+
+/* The Close Button */
+
+.modelBoxSpan {
+  color: whitesmoke;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.modelBoxSpan:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.descriptionContent , .descriptionContent2 , .descriptionContent3{
+  text-align: center;
+  letter-spacing: .1em;
+  line-height: 1em;
+  margin-top: 0.7em;
+  letter-spacing: 0.08em;
+  padding: 0.4em;
+}
+
+
+
+#purchase {
+  margin: .5em;
+  padding: .3em; 
+  margin-left: 25%;
+  padding-left: .6em;
+  padding-right: .6em;
+  text-align: center;
+  width: 10em;
+  font-size: 18px;
+  border-radius: 6px;  
+  margin-left: 25%;
+  margin-top: 1em;
+
+
+}
+
+#purchase:hover {
+  color: red;
 }
 
 
