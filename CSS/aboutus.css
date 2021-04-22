@@ -136,3 +136,26 @@ h1{
      color: #022a3f;
      font-family: 'Almarai', sans-serif;
  }
+
+a{
+    /* position: fixed; */
+    text-decoration: none;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    color: #3F7491;
+  
+  
+    padding-top:15%  ;
+    text-align: center;
+  }
+
+
+
+  footer{
+    position: relative;
+    bottom: 800px;
+    
+    }

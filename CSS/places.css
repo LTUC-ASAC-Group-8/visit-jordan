@@ -38,6 +38,7 @@ section img{
      width: 30%;
      margin-left: 2%;
      height: 14em;;
+     border-radius: 15px;
   
 
  }
@@ -64,7 +65,7 @@ section img{
 
   section p{
       overflow:scroll;
-      height:9.5em ;
+      height:9em ;
       margin-left: 3%;
       margin-right: 3%;
       width: 30%;
@@ -94,6 +95,12 @@ section img{
     left: 53%;
     width: 12%;
     height: 2em;
+    padding: .3em;
+    padding-left: .6em;
+    padding-right: .6em;
+    text-align: center;
+    border-radius: 6px;
+
 }
 
 

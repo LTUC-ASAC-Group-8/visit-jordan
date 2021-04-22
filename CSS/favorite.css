@@ -1,16 +1,22 @@
 
 #imageContainer {
+  border: solid rgba(100, 148, 237, 0.329);
+  background-color: #8cc1de17;
 
  width: 20%;
  float: right;
  text-align: right;
  margin-right: 2%;
  margin-top: 16px;
+ height: 100%;
+ padding-bottom: 16px;
+ border-radius: 15px;
  /* background-color: ; */
 }
 
 #imageContainer article{
   height: 9em;
+  
 }
 
 div img{
@@ -18,12 +24,13 @@ div img{
   width: 90%;
   margin: 5%;
   height: 90%;
+  border-radius: 15px;
 }
 
 
 
 #detailsContainer{
-  /* position: fixed; */
+  position: fixed;
   float: left;
   width: 55%;
   margin-left: 5%;
@@ -36,6 +43,7 @@ div img{
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
+
 }
 
 
@@ -75,6 +83,19 @@ video {
   margin-top: 2%;
   background-color: rgba(102, 0, 0, 0.89);
   color: #CCAB81;
+
+
+  z-index: 1;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1em;
+  background-color:rgba(102, 0, 0, 0.89);
+  color: rgb(218, 216, 216);
+    padding: .3em;
+    padding-left: .6em;
+    padding-right: .6em;
+    text-align: center;
+    border-radius: 6px;
+
 }
   
 .button:hover{
