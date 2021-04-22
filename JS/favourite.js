@@ -80,6 +80,7 @@ if (favouriteJourneys !== null && favouriteJourneys.length !== 0) {
         let video = document.createElement('video');
         videoCopy=video;
         let paragraph = document.createElement('p');
+        paragraph.setAttribute('id','description')
         paraCopy=paragraph;
         
              articleEl.appendChild(title);
@@ -157,10 +158,11 @@ if (favouriteJourneys !== null && favouriteJourneys.length !== 0) {
     let parent = document.getElementById('link');
     let link = document.createElement('a');
     parent.appendChild(link);
-    link.textContent = ('Hello Empty');
-    link.setAttribute('href', 'DiscoverJordanPlaces.html');
+    link.setAttribute('href','DiscoverJordanPlaces.html');
+    link.setAttribute('id','empty-link')
+    
+    link.textContent = ('You Can Add A Place To Your Favourite List, Click on Discover Jordan!');
 
-    console.log('empty');
 }
 
 
