@@ -19,6 +19,8 @@ function Trip(name, description, image, video) {
 
 
 
+
+new Trip('DANA NATURE RESERVE', "Family Adventures is one of Jordan's biggest and only natural reserves. About 555 plant species and 200 animals species are in the Dana Nature Reserve. Genuine fire cooking, Bedouin style in Rummana campsite, will be served on an evening. Walk around the park to enjoy the breathtaking view of the Great Rift Valley at the end of the day, with a stunning view. Jordan's only bio-geographical reserve which encompasses four separate areas of the nation. You'll see one of the lovely Jordana Hyenas rehabilitated and reintroduced in the wild, or you can see the Caracal Cat if you're lucky.", 'images/places-images/DANA NATURE RESERVE.jpg', '/places-video/Dana Nature Reserve.mp4');
 new Trip('PELLA', "Ajlun Castle was built in 1184 AD by one of Saladin's generals to control the iron mines of Ajlun. Umm Qays is well known as the location of the famed miracle of the Gadarene swine. Pella is a favorite of archaeologists due to its extraordinary wealth of antiquities. Visit the ancient city of As-Salt, which houses the tomb/shrine of Job.", 'images/places-images/PELLA.jpg', '/places-video/Pella.mp4');
 
 
@@ -32,8 +34,6 @@ new Trip("MA'IN HOT SPRINGS", "Discover Haret Jdoudna with lunch and set off in 
 
 new Trip('DESERT CASTLES', "Jordan is home to some of the world's most spectacular Roman ruins. Quseir Amra is one of Jordan's four UNESCO World Heritage Sites. Jordan's Desert Castles are home to stunning examples of both early Islamic art and architecture. Amman is a great place for a family-friendly meal and to mingle with the locals.", 'images/places-images/DESERT CASTLES.jpg', '/places-video/desert castle.mp4');
 
-
-new Trip('DANA NATURE RESERVE', "Family Adventures is one of Jordan's biggest and only natural reserves. About 555 plant species and 200 animals species are in the Dana Nature Reserve. Genuine fire cooking, Bedouin style in Rummana campsite, will be served on an evening. Walk around the park to enjoy the breathtaking view of the Great Rift Valley at the end of the day, with a stunning view. Jordan's only bio-geographical reserve which encompasses four separate areas of the nation. You'll see one of the lovely Jordana Hyenas rehabilitated and reintroduced in the wild, or you can see the Caracal Cat if you're lucky.", 'images/places-images/DANA NATURE RESERVE.jpg', '/places-video/Dana Nature Reserve.mp4');
 
 new Trip("BETHANY BEYOND THE JORDAN", "The site of Jesus' baptism is Bethany Outside the Jordan. The place of Baptism is situated east of the river Jordan. On his visit to Jordan in 2000, Pope John Paul II visited the baptismal site. The place is a popular pilgrimage site for U.S. and international religious pilgrims and visitors. It lies in the old wild north of the Dead Sea in the region between Tell el-Kharrar and Tell Mar Elias. It was the first known incarnation of the Trinity, in the Spirit of Elijah, that John the Baptist came to preach and baptize.", 'images/places-images/BETHANY BEYOND THE JORDAN.jpg', '/places-video/Bethany Beyond .mp4');
 
