@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+/* #hiba{
+
+    margin-left: 24em;
+    margin-top: 4em;
+}
+#hibaimg{
+    border-radius: 50%;
+} */
+h1{
+    font-size: 5em;
+    margin-left: 8.2em;
+    margin-top: 1em;
+    color: rgb(92, 8, 8);
+}
+#imm{
+    margin-left: 21em;
+}
+#hiba{
+    z-index: 2;
+    position: relative;
+    top: -22em;
+    margin-left: 31em;
+}
+.name{
+
+    font-size: initial;
+    color: rgb(92, 8, 8);
+}
+#dana{
+    z-index: 2;
+    position: relative;
+    top: -17em;
+    margin-left: 31em; 
+}
+#maryam{
+    z-index: 2;
+    position: relative;
+    top: -48em;
+    margin-left: 31em;
+}
+#alaa{
+    z-index: 2;
+    position: relative;
+    top: -31em;
+    margin-left: 64em; 
+}
+.name2{
+   /* margin-left: .2em; */
+    font-size: initial;
+    color: rgb(92, 8, 8);
+}
+.soc{
+    margin-left: 5.1em;
+}
+#ahmad{
+    z-index: 2;
+    position: relative;
+    top: -50em;
+    margin-left: 61em; 
+}
+.aboutahmad{
+    margin-left: 3em;
+}
+.socahmad{
+    margin-left: 7.4em;
+    margin-top: -1em;
+}
+#ikrimah{
+    z-index: 2;
+    position: relative;
+    top: -69.5em;
+    margin-left: 65em;
+}
+.name4{
+    /* margin-left: 2.9em; */
+     font-size: initial;
+     color: rgb(92, 8, 8);
+ }
+ .name3{
+    margin-left: 2.9em;
+    /* margin-left: .2em; */
+     font-size: initial;
+     color: rgb(92, 8, 8);
+ }
+ .sock{
+    margin-left: 3.5em;
+}
+#yahia{
+    z-index: 2;
+    position: relative;
+    top: -57.5em;
+    margin-left: 51em;
+}
+.socyahia{
+    margin-left: .5em;
+}
+.aboutyahia{
+    margin-left: -1em;
+}
+.namey{
+   
+     font-size: initial;
+     color: rgb(92, 8, 8);
+ }
