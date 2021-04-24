@@ -1,3 +1,6 @@
+/* eslint-disable quotes */
+/* eslint-disable no-trailing-spaces */
+/* eslint-disable eqeqeq */
 /* eslint-disable no-inner-declarations */
 'use strict';
 
@@ -240,6 +243,6 @@ window.onclick = function (event) {
   if (event.target == modelBoxPurchasing) {
     modelBoxPurchasing.style.display = 'none';
   }
-}
+};
 
 
